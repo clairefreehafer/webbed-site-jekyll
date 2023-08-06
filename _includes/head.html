@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {%- if page.custom_css -%}
-    <link rel="stylesheet" href="{{ page.custom_css | relative_url }}">
+  {%- if layout.custom_css -%}
+    <link rel="stylesheet" href="/assets/styles/{{ layout.custom_css }}">
   {%- endif -%}
 </head>

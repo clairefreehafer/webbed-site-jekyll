@@ -1,0 +1,20 @@
+---
+custom_css: photo-grid.css
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <main class="photo-grid">
+      {%- for image in page.images -%}
+        {%- if image.src -%}
+          <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+        {%- endif -%}
+      {%- endfor -%}
+    </main>
+    {{ page.custom_css }}
+  </body>
+
+</html>
