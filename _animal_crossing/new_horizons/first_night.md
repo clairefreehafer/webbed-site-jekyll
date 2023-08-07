@@ -1,5 +1,5 @@
 ---
 title: first night
-data: new_horizons
+game: new_horizons
 layout: photo-grid
 ---

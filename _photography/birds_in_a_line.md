@@ -1,15 +1,20 @@
 ---
 title: birds in a line
 layout: slideshow
-images: # eventually, these may reference data
-  - key: 2B95nNL
+images:
+  - id: 2022-06-16_20-23-46
+    src: https://photos.smugmug.com/photos/i-2B95nNL/0/X4/i-2B95nNL-X4.jpg
+    key: 2B95nNL
     alt: ""
     title: rehoboth beach, delaware
-  - src: https://photos.smugmug.com/Rehoboth-2022/i-cnjtDmT/0/60657af5/X5/2022-06-16-20-23-50-X5.jpg
+  - id: 2022-06-16_20-23-50
+    src: https://photos.smugmug.com/Rehoboth-2022/i-cnjtDmT/0/60657af5/X5/2022-06-16-20-23-50-X5.jpg
     key: cnjtDmT
     alt: ""
     title: rehoboth beach, delaware
-  - src: https://photos.smugmug.com/Road-Trip-through-Kaikoura/i-7hXmv6W/2/9bc0f21a/X5/2019-02-21-18-26-30-X5.jpg
+    date: 2022-06-16
+  - id: 2019-02-21_18-26-30
+    src: https://photos.smugmug.com/Road-Trip-through-Kaikoura/i-7hXmv6W/2/9bc0f21a/X5/2019-02-21-18-26-30-X5.jpg
     key: 7hXmv6W
     alt: ""
     title: kaikoura, aotearoa

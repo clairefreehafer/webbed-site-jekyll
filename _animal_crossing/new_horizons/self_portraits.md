@@ -1,7 +1,7 @@
 ---
 title: self portraits
 date: 2020-03-21
-data: new_horizons
+game: new_horizons
 layout: photo-grid
 images:
   - 2020-03-21_18-29-51

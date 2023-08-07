@@ -1,0 +1,7 @@
+{%- if page.images -%}
+  {%- for image in page.images -%}
+    {%- if image.src -%}
+      <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}

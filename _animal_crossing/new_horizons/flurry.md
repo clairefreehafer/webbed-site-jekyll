@@ -1,6 +1,6 @@
 ---
 title: flurry
 tag: flurry
-data: new_horizons
+game: new_horizons
 layout: photo-grid
 ---
