@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Fink Heavy";
+  src: url("/assets/fonts/finkheavy-webfont.woff2") format("woff2"),
+       url("/assets/fonts/finkheavy-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "FOT Seurat Pro B";
+  src: url("/assets/fonts/fot-seurat__pro_b.otf") format("opentype"),
+        url("/assets/fonts/fot-seurat_pro_b-webfont.woff2") format("woff2"),
+       url("/assets/fonts/fot-seurat_pro_b-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-attachment: scroll;
+  background-repeat: repeat;
+  background-position: 2rem calc(70px + 1rem);
+  font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
+  font-weight: normal;
+  margin: 0 0 2rem 0;
+  font-weight: 200;
+}
+
+.svg-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  margin: 1rem 0 0;
+}
+
+svg {
+  font-family: "Fink Heavy", "Georgia", sans-serif;
+  font-size: 3rem;
+  width: 350px;
+  height: 70px;
+  fill: rgba(231, 197, 73, 1);
+}
+
+.svg-background {
+  fill: rgba(231, 197, 73, 1);
+  stroke: rgba(145, 107, 51, 1);
+  stroke-width: 15px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+.svg-background-shadow {
+  fill: black;
+  stroke: black;
+  stroke-width: 15px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+.svg-emboss {
+  fill: rgba(231, 197, 73, 0.5);
+}
+
+.page-content {
+  background-color: #cfbe95;
+  border-radius: 20px;
+  margin: 0 2rem;
+  padding: 120px 3rem 1rem;
+  background-repeat: repeat-x;
+  background-position: left top;
+  box-shadow: 0 1rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5)
+}
+
+nav {
+  background-color: rgb(248, 245, 223, 0.8);
+  border-radius: 3rem;
+  box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  height: 6rem;
+  padding: 1rem;
+  margin: 0 2rem 1rem;
+  text-align: center;
+}
+
+a, a:visited {
+  color: rgb(85, 69, 64);
+}

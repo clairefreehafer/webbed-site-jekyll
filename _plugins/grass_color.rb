@@ -12,6 +12,10 @@ module Jekyll
 
     def render(context)
       date = context[@page_date.strip]
+      if date == nil
+        date = Time.now
+      end
+
       month = date.month
       day = date.day
 

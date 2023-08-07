@@ -1,14 +1,17 @@
-// theme for new horizons photo pages
-
-$border: 1rem;
-
 body {
   background-attachment: fixed;
   background-repeat: repeat;
 }
 
 .photo-grid {
-  gap: 3rem !important;
+  box-sizing: border-box;
+  display: grid;
+  gap: 1rem 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 0 3rem;
+  min-height: 100vh;
+  padding: 2rem 0;
 }
 
 .photo-border {
@@ -19,6 +22,7 @@ body {
               0 0 1.5rem 0.1rem rgba(0, 0, 0, 0.3);
   max-height: calc(100vh - 6rem);
   place-self: center;
+  padding: 1rem;
 }
 
 .photo {

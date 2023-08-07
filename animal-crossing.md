@@ -1,6 +1,7 @@
 ---
 title: animal crossing
-layout: animal-crossing
+layout: animal_crossing
+theme: animal_crossing
 ---
 
 <!-- TODO: sort lists -->
