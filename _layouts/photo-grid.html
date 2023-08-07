@@ -8,39 +8,12 @@ custom_css: photo-grid.css
 
   <body>
     <main class="photo-grid">
-      <!-- TODO: separate into _includes? -->
-      {%- if page.images -%}
-        {%- for image in page.images -%}
-          {%- if image.src -%}
-            <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
-          {%- endif -%}
-        {%- endfor -%}
-
-      {%- elsif page.tag -%}
-        {%- if page.path contains "animal_crossing" -%}
-          {%- assign images = site.data.animal_crossing[page.data] | where_exp: "item", "item.tags contains page.tag" -%}
-
-          {%- for image in images -%}
-            {%- if image.src -%}
-              <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
-            {%- endif -%}
-          {%- endfor -%}
-        {%- endif -%}
-
+      {%- if page.path contains "animal_crossing" -%}
+        {%- include animal_crossing/photo-grid.html -%}
       {%- else -%}
-        {%- if page.path contains "animal_crossing" -%}
-          {%- assign images = site.data.animal_crossing[page.data] | where_exp: "item", "item.title contains page.title" -%}
-
-          {%- for image in images -%}
-            {%- if image.src -%}
-              <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
-            {%- endif -%}
-          {%- endfor -%}
-        {%- endif -%}
+        add photo page version
       {%- endif -%}
-
     </main>
-    {{ page.custom_css }}
   </body>
 
 </html>
