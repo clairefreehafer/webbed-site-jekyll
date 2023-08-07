@@ -4,7 +4,9 @@
 
     {%- assign image = site.data.animal_crossing[page.game] | where_exp: "item", "item.id == image_id" -%}
 
-    <img src="{{ image[0].src }}" alt="{{ image[0].alt }}" class="photo" />
+    <div class="photo-border">
+      <img src="{{ image[0].src }}" alt="{{ image[0].alt }}" class="photo" />
+    </div>
 
   {%- endfor -%}
 
@@ -13,13 +15,17 @@
   {%- assign images = site.data.animal_crossing[page.game] | where_exp: "item", "item.tags contains page.tag" -%}
 
   {%- for image in images -%}
-    <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+    <div class="photo-border">
+      <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+    </div>
   {%- endfor -%}
 
 {%- else -%}
   {%- assign images = site.data.animal_crossing[page.game] | where_exp: "item", "item.title contains page.title" -%}
 
   {%- for image in images -%}
-    <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+    <div class="photo-border">
+      <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+    </div>
   {%- endfor -%}
 {%- endif -%}
