@@ -6,4 +6,12 @@
   {%- if layout.custom_css -%}
     <link rel="stylesheet" href="/assets/styles/{{ layout.custom_css }}">
   {%- endif -%}
+
+  {%- if page.theme == "new_horizons" -%}
+    <style>
+      body {
+        background-image: url("/assets/images/grass/{%- grass_color triangle page.date -%}");
+      }
+    </style>
+  {%- endif -%}
 </head>
