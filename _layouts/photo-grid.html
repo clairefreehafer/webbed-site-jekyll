@@ -2,17 +2,43 @@
 custom_css: photo-grid.css
 ---
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
   {%- include head.html -%}
 
   <body>
     <main class="photo-grid">
-      {%- for image in page.images -%}
-        {%- if image.src -%}
-          <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+      <!-- TODO: separate into _includes? -->
+      {%- if page.images -%}
+        {%- for image in page.images -%}
+          {%- if image.src -%}
+            <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+          {%- endif -%}
+        {%- endfor -%}
+
+      {%- elsif page.tag -%}
+        {%- if page.path contains "animal_crossing" -%}
+          {%- assign images = site.data.animal_crossing[page.data] | where_exp: "item", "item.tags contains page.tag" -%}
+
+          {%- for image in images -%}
+            {%- if image.src -%}
+              <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+            {%- endif -%}
+          {%- endfor -%}
         {%- endif -%}
-      {%- endfor -%}
+
+      {%- else -%}
+        {%- if page.path contains "animal_crossing" -%}
+          {%- assign images = site.data.animal_crossing[page.data] | where_exp: "item", "item.title contains page.title" -%}
+
+          {%- for image in images -%}
+            {%- if image.src -%}
+              <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endif -%}
+
     </main>
     {{ page.custom_css }}
   </body>
