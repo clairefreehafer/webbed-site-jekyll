@@ -91,6 +91,7 @@
 - src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-TwR9DBP/2/24a81968/X2/2020-08-01-12-19-22-X2.jpg
   alt: ""
   date: 2020-08-01
+  has_border: true
   tags:
     - avalar
     - dom

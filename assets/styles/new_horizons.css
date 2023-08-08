@@ -30,6 +30,10 @@ body {
   height: 100%;
 }
 
+.photo-border.hide-border {
+  padding: 0;
+}
+
 .photo {
   border-radius: 1%;
   box-sizing: border-box;
@@ -40,6 +44,10 @@ body {
   margin: 0 var(--border-width);
 }
 
+.hide-border > .photo {
+  margin: 0;
+}
+
 .photo-inset-shadow-helper {
   box-sizing: border-box;
   position: absolute;
@@ -47,20 +55,22 @@ body {
   height: 100%;
   width: 100%;
   max-width: 100%;
+  max-height: 100%;
   top: 0;
   padding: var(--border-width) 0;
+}
+
+.photo-inset-shadow-helper.hide-border {
+  display: none;
 }
 
 .photo-inset-shadow {
   border-radius: 1%;
   box-shadow: inset 0 0 0.25rem 0.1rem rgba(0, 0, 0, 0.3);
   width: 100%;
-  height: calc(100%);
-  z-index: 2;
-  left: var(--border-width);
-  top: var(--border-width);
+  height: 100%;
   margin: 0 var(--border-width);
   max-width: 90%;
 }
 
-/* TODO: add another gradient around the outside of the image/inside of the frame - div slightly wider than image with gradients */
+/* TODO: add another gradient around the outside of the image/inside of the frame - div slightly wider than imaage with gradients */
