@@ -2,29 +2,32 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- if layout.custom_css -%}
     <link rel="stylesheet" href="/assets/styles/{{ layout.custom_css }}">
   {%- endif -%}
 
-  {%- case page.theme -%}
-    {%- when "animal_crossing" -%}
-      <link rel="stylesheet" href="{{ "/assets/styles/animal_crossing.css" | relative_url }}">
-      <style>
-        body {
-          background-image: url("/assets/images/grass/{%- grass_color square page.date -%}");
-        }
+  {%- if layout.theme == "animal_crossing" -%}
+    <link rel="stylesheet" href="{{ "/assets/styles/animal_crossing.css" | relative_url }}">
+    <style>
+      body {
+        background-image: url("/assets/images/grass/{%- grass_color square page.date -%}");
+      }
 
-        .page-content {
-          background-image: url("/assets/images/sand/{%- grass_color square page.date -%}");
-        }
-      </style>
-    {%- when "new_horizons" -%}
-      <link rel="stylesheet" href="{{ "/assets/styles/new_horizons.css" | relative_url }}">
-      <style>
-        body {
-          background-image: url("/assets/images/grass/{%- grass_color triangle page.date -%}");
-        }
-      </style>
-  {%- endcase -%}
+      .page-content {
+        background-image: url("/assets/images/sand/{%- grass_color square page.date -%}");
+      }
+    </style>
+
+  {%- elsif layout.theme == "zelda" -%}
+    <link rel="stylesheet" href="{{ "/assets/styles/zelda.css" | relative_url }}">
+
+  {%- elsif page.game == "new_horizons" -%}
+    <link rel="stylesheet" href="{{ "/assets/styles/new_horizons.css" | relative_url }}">
+    <style>
+      body {
+        background-image: url("/assets/images/grass/{%- grass_color triangle page.date -%}");
+      }
+    </style>
+
+  {%- endif -%}
 </head>

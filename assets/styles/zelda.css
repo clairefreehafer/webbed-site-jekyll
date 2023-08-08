@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+  background-image: url("/assets/images/zelda/pad-background.jpg");
+  color: #76b6ff;
+}
+
+a, a:visited {
+  color: white;
+}

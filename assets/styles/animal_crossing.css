@@ -25,6 +25,12 @@ body {
   font-weight: 200;
 }
 
+.header {
+  margin: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .svg-container {
   align-items: center;
   justify-content: center;
@@ -33,7 +39,7 @@ body {
   margin: 1rem 0 0;
 }
 
-svg {
+.svg-title {
   font-family: "Fink Heavy", "Georgia", sans-serif;
   font-size: 3rem;
   width: 350px;
@@ -68,19 +74,21 @@ svg {
   padding: 120px 3rem 1rem;
   background-repeat: repeat-x;
   background-position: left top;
-  box-shadow: 0 1rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5)
+  box-shadow: 0 1rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
 }
 
 nav {
   background-color: rgb(248, 245, 223, 0.8);
   border-radius: 3rem;
   box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
-  height: 6rem;
-  padding: 1rem;
-  margin: 0 2rem 1rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 
-a, a:visited {
+a {
   color: rgb(85, 69, 64);
+}
+
+a:visited {
+  text-decoration-color: #cfbe95;
 }

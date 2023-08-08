@@ -8,5 +8,5 @@ layout: home
 ## currently reading
 
 {% for book in site.data.books.currently_reading %}
-  - {{ book.title }} by {{ book.author }}
+  - *{{ book.title }}* by {{ book.author }}
 {% endfor %}

@@ -5,7 +5,10 @@
     {%- assign image = site.data.animal_crossing[page.game] | where_exp: "item", "item.id == image_id" -%}
 
     <div class="photo-border">
-      <img src="{{ image[0].src }}" alt="{{ image[0].alt }}" class="photo" />
+        <img src="{{ image[0].src }}" alt="{{ image[0].alt }}" class="photo" />
+        <div class="photo-inset-shadow-helper">
+          <div class="photo-inset-shadow"></div>
+        </div>
     </div>
 
   {%- endfor -%}
@@ -17,6 +20,9 @@
   {%- for image in images -%}
     <div class="photo-border">
       <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+      <div class="photo-inset-shadow-helper">
+        <div class="photo-inset-shadow"></div>
+      </div>
     </div>
   {%- endfor -%}
 
@@ -26,6 +32,9 @@
   {%- for image in images -%}
     <div class="photo-border">
       <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+      <div class="photo-inset-shadow-helper">
+        <div class="photo-inset-shadow"></div>
+      </div>
     </div>
   {%- endfor -%}
 {%- endif -%}
