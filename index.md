@@ -5,6 +5,8 @@
 layout: home
 ---
 
+this site is heavily under construction, so what you see is what you get!
+
 ## currently reading
 
 {% for book in site.data.books.currently_reading %}

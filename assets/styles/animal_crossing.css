@@ -18,7 +18,7 @@
 body {
   background-attachment: scroll;
   background-repeat: repeat;
-  background-position: 2rem calc(86px + 1rem);
+  background-position: 2rem calc(86px + 5rem);
   font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
   font-weight: normal;
   margin: 0 0 2rem 0;
@@ -26,10 +26,11 @@ body {
 }
 
 .header {
-  margin: 0.5rem 2rem;
+  margin: 0 2rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
 .svg-container {
@@ -74,6 +75,7 @@ nav {
   box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
   padding: 1rem 2rem;
   text-align: center;
+  height: 2rem;
 }
 
 .menu-icon {
@@ -82,6 +84,16 @@ nav {
 
 .nav-trigger {
   display: none;
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+}
+
+.page-icon {
+  max-height: 2rem;
+  margin-right: 0.25rem;
 }
 
 @media (max-width: 600px) {

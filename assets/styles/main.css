@@ -11,6 +11,10 @@ header {
   display: none;
 }
 
+.nav-links {
+  display: flex;
+}
+
 .page-link {
   margin-right: 1rem;
 }
