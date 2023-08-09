@@ -23,6 +23,6 @@ theme: animal_crossing
 ## new leaf
 {% for page in site.animal_crossing -%}
   {%- if page.path contains "new_leaf" %}
-- <img src="/assets/images/page_icons/animal_crossing/{{ page.icon }}.png" class="page-icon"> [{{ page.title | escape }}]({{ page.url | relative_url }})
+- [{{ page.title | escape }}]({{ page.url | relative_url }})
   {%- endif -%}
 {% endfor %}
