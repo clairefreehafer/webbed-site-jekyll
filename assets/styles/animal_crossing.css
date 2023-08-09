@@ -38,7 +38,6 @@ body {
   display: flex;
   width: 100%;
   margin: 1rem 0 0;
-  flex-shrink: 1;
 }
 
 .svg-title {
@@ -75,7 +74,6 @@ nav {
   box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
   padding: 1rem 2rem;
   text-align: center;
-  height: 100%;
 }
 
 .menu-icon {
