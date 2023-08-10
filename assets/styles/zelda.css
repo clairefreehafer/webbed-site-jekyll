@@ -1,7 +1,22 @@
 body {
   background-color: black;
-  background-image: url("/assets/images/zelda/pad-background.jpg");
+  background: url("/assets/images/zelda/pad-frame.png") bottom center repeat-x, url("/assets/images/zelda/pad-background.jpg") repeat;
   color: #76b6ff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-size: 100%, 100%;
+  margin: 0;
+  padding: 1rem;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.site-title, .page-link {
+  padding-bottom: 0.5rem;
+  background-image: url("/assets/images/zelda/pad-text.png");
+  background-repeat: no-repeat;
+  background-size: auto 25%;
+  background-position: bottom center;
+  text-decoration: none;
 }
 
 a, a:visited {
