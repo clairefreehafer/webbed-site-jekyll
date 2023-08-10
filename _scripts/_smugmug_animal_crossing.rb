@@ -42,7 +42,7 @@ end
 games = ['new_horizons', 'new_leaf']
 
 # check game and file are valid
-if games.include? game then
+if not games.include? game then
   puts "❌ invalid game!"
 end
 
