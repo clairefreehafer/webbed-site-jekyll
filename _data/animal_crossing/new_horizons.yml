@@ -1,7 +1,7 @@
 - src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-Kb9cvX3/2/3ea802f5/X2/2020-03-20-00-40-28-X2.jpg
   alt: ""
   title: first night
-  date: 2020-03-20
+  date: 2020-03-20 00:40:28
 - src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-69Mj9p7/2/acc4f199/X2/2020-03-20-19-03-16-X2.jpg
   alt: ""
   title: first night
@@ -44,11 +44,20 @@
     - avalar
     - claire
 
+- id: 2020-03-22_14-18-21
+  src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-w8Rr7z3/3/fc12ff3a/X2/2020-03-22-14-18-21-X2.jpg
+  alt: dom and my player character fish from opposite sides of a river.
+  date: 2020-03-22 14:18:21
+  tags:
+    - avalar
+    - claire
+    - dom
+
 - id: 2020-03-22_18-36-44
   src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-Ncn7KFV/2/c4035e2d/X2/2020-03-22-18-36-44-X2.jpg
   alt: a photo of my character taken at sunset. they are standing on a rocky outcropping with a small triangular-shapped tide pool to their left.
   title: tide pool
-  date: 2020-03-22
+  date: 2020-03-22 18:36:44
   tags:
     - claire
     - worm cove
@@ -87,6 +96,24 @@
     - avalar
     - claire
     - k.k.
+
+- id: 2020-05-18_18-58-31
+  src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-fKkHJh3/2/42c0cb1f/X2/2020-05-06-18-58-31-X2.jpg
+  alt: ""
+  date: 2020-05-06 18:58:31
+  tags:
+    - avalar
+    - dom
+
+- id: 2020-05-09_19-12-44
+  src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-sb2nnXj/2/06fe0c25/X2/2020-05-09-19-12-44-X2.jpg
+  alt: ""
+  date: 2020-05-09 19:12:44
+  tags:
+    - avalar
+    - dom
+    - k.k.
+    - ken
 
 - src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-TwR9DBP/2/24a81968/X2/2020-08-01-12-19-22-X2.jpg
   alt: ""

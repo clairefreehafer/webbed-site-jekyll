@@ -1,58 +1,17 @@
-{%- if page.images -%}
+{%- assign images = site.data.animal_crossing[page.game][page.slug] -%}
 
-  {%- for image_id in page.images -%}
+{%- for image in images -%}
+  {%- capture hide_border -%}
+    {%- if image.has_border -%}
+      hide-border
+    {%- endif -%}
+  {%- endcapture -%}
 
-    {%- assign image = site.data.animal_crossing[page.game] | where_exp: "item", "item.id == image_id" -%}
-
-    {%- capture hide_border -%}
-      {%- if image.has_border -%}
-        hide-border
-      {%- endif -%}
-    {%- endcapture -%}
-
-    <div class="photo-border {{ hide_border }}">
-      <img src="{{ image[0].src }}" alt="{{ image[0].alt }}" class="photo" />
-      <div class="photo-inset-shadow-helper {{ hide_border }}">
-        <div class="photo-inset-shadow"></div>
-      </div>
+  <div class="photo-border {{ hide_border }}">
+    <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+    <div class="photo-inset-shadow-helper {{ hide_border }}">
+      <div class="photo-inset-shadow"></div>
     </div>
+  </div>
 
-  {%- endfor -%}
-
-{%- elsif page.tag -%}
-
-  {%- assign images = site.data.animal_crossing[page.game] | where_exp: "item", "item.tags contains page.tag" -%}
-
-  {%- for image in images -%}
-    {%- capture hide_border -%}
-      {%- if image.has_border -%}
-        hide-border
-      {%- endif -%}
-    {%- endcapture -%}
-
-    <div class="photo-border {{ hide_border }}">
-      <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
-      <div class="photo-inset-shadow-helper {{ hide_border }}">
-        <div class="photo-inset-shadow"></div>
-      </div>
-    </div>
-  {%- endfor -%}
-
-{%- else -%}
-  {%- assign images = site.data.animal_crossing[page.game] | where_exp: "item", "item.title contains page.title" -%}
-
-  {%- for image in images -%}
-    {%- capture hide_border -%}
-      {%- if image.has_border -%}
-        hide-border
-      {%- endif -%}
-    {%- endcapture -%}
-
-    <div class="photo-border {{ hide_border }}">
-      <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
-      <div class="photo-inset-shadow-helper {{ hide_border }}">
-        <div class="photo-inset-shadow"></div>
-      </div>
-    </div>
-  {%- endfor -%}
-{%- endif -%}
+{%- endfor -%}
