@@ -41,9 +41,13 @@ end
 
 games = ['new_horizons', 'new_leaf']
 
-# check game and file are valid
-if not games.include? game then
-  puts "❌ invalid game!"
+unless games.include? game
+  puts "❌ #{game} is not a valid game!"
+end
+
+# check if we already have a data file
+if File.exist?("./_data/animal_crossing/#{game}/#{file}.yml")
+  data = YAML.load_file("./_data/animal_crossing/#{game}/#{file}.yml")
 end
 
 unless file.include? '.md'
@@ -62,15 +66,23 @@ if album_key then
 
     image_url = fetch("https://api.smugmug.com#{largest_image_uri}?APIKey=#{SMUGMUG_API_KEY}")['Response']['LargestImage']['Url']
 
+    existing_data = data.find { |img_data| img_data["src"] == image_url }
+
+    puts existing_data
+
+    alt = existing_data['alt'] ? existing_data['alt'] : ''
+    has_border = existing_data['has_border'] ? existing_data['has_border'] : false
+
     data_to_save = {
       'src' => image_url,
-      'alt' => '',
+      'alt' => alt,
       'title' => image['Title'],
       'caption' => image['Caption'],
       # TODO: need to fix AC dates from scratch pretty much x_x
       # 'date' => DateTime.parse(image['DateTimeOriginal']).strftime('%F %T'),
       'tags' => image['KeywordArray']
     }
+    data_to_save['has_border'] = has_border if has_border
 
     output_array.push(data_to_save)
   end
