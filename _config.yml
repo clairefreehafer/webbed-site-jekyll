@@ -33,6 +33,8 @@ collections:
     output: true
   photography:
     output: true
+  zelda:
+    output: true
 
 # Build settings
 # theme: minima
