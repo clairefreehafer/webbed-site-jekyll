@@ -17,7 +17,5 @@ end
 # sort read by finished date
 read.sort_by! { |book| book['finished'] }.reverse!
 
-puts read
-
 File.write(currently_reading_path, currently_reading.to_yaml)
 File.write(read_path, read.to_yaml)
