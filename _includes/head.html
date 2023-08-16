@@ -3,8 +3,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ "/assets/styles/main.css" | relative_url }}">
-  {%- if layout.custom_css -%}
-    <link rel="stylesheet" href="/assets/styles/{{ layout.custom_css }}">
+  {%- if layout.css -%}
+    <link rel="stylesheet" href="/assets/styles/{{ layout.css }}.css">
+  {%- endif -%}
+
+  {%- if layout.script -%}
+    <script type="module" src="/assets/scripts/{{ layout.script }}.js"></script>
+  {%- endif -%}
+
+  {%- if page.path contains "animal_crossing" -%}
+    {%- include animal_crossing/head.html -%}
   {%- endif -%}
 
   {%- if layout.theme == "animal_crossing" -%}
@@ -23,7 +31,7 @@
     <link rel="stylesheet" href="{{ "/assets/styles/zelda.css" | relative_url }}">
 
   {%- elsif page.game == "new_horizons" -%}
-    <link rel="stylesheet" href="{{ "/assets/styles/new_horizons.css" | relative_url }}">
+    <!-- <link rel="stylesheet" href="{{ "/assets/styles/new_horizons.css" | relative_url }}"> -->
     <style>
       body {
         background-image: url("/assets/images/grass/{%- grass_color triangle page.date -%}");

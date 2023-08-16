@@ -1,21 +1,20 @@
+---
+script: slideshow
+---
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>claire freehafer</title>
-    <link href="{{ "/assets/styles/slideshow.css" | relative_url }}" rel="stylesheet">
-    <script type="module" src="{{ "/assets/scripts/slideshow.js" | relative_url }}"></script>
-  </head>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {%- include head.html -%}
+
   <body>
-    <h1 id="title"></h1>
-    <button id="prev">&larr;</button>
-    {%- for image in page.images -%}
-      {%- if image.src -%}
-        <img src="{{ image.src }}" alt="{{ image.alt }}" />
+    <main class="slideshow">
+      {%- if page.path contains "animal_crossing" -%}
+        {%- include animal_crossing/slideshow.html -%}
+      {%- else -%}
+        {%- include photography/slideshow.html -%}
       {%- endif -%}
-    {%- endfor -%}
-    <button id="next">&rarr;</button>
-    <h2 id="slide-count"></h2>
+    </main>
   </body>
+
 </html>
+

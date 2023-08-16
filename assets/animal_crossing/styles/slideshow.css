@@ -1,0 +1,67 @@
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow {
+  position: relative;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.slideshow-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  counter-increment: slides;
+  flex-direction: column;
+}
+
+.slide-snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+  z-index: -1;
+}
+
+.photo {
+  width: 100%;
+}
+
+.slide-navigation {
+  background-color: rgb(248, 245, 223, 0.8);
+  bottom: 0.5rem;
+  border-radius: 3rem;
+  box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  left: 50%;
+  padding: 1rem 2rem;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  transform: translateX(-50%);
+}

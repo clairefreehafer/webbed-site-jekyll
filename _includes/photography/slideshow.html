@@ -1,0 +1,9 @@
+<h1 id="title"></h1>
+<button id="prev">&larr;</button>
+{%- for image in page.images -%}
+  {%- if image.src -%}
+    <img src="{{ image.src }}" alt="{{ image.alt }}" />
+  {%- endif -%}
+{%- endfor -%}
+<button id="next">&rarr;</button>
+<h2 id="slide-count"></h2>

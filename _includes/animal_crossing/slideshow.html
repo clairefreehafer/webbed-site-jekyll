@@ -1,0 +1,33 @@
+{%- assign images = site.data.animal_crossing[page.game][page.slug] -%}
+
+<ol class="slideshow-wrapper" id="scroll-container">
+  {%- for image in images -%}
+    {%- capture hide_border -%}
+      {%- if image.has_border -%}
+        hide-border
+      {%- endif -%}
+    {%- endcapture -%}
+
+    {%- assign current_slide = forloop.index -%}
+
+    <li class="slide" id="slide-{{ forloop.index }}">
+      <div class="slide-snapper"></div>
+      <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+      <div class="slide-navigation">
+        {%- if forloop.index > 1 -%}
+          <a href="#slide-{{ forloop.index | minus: 1 }}" class="previous-slide">
+            &larr;
+          </a>
+          &nbsp;
+        {%- endif -%}
+        <span class="slide-count">{{ forloop.index }} / {{ forloop.length }}</span>
+        {%- if forloop.index < forloop.length -%}
+          &nbsp;
+          <a href="#slide-{{ forloop.index | plus: 1 }}" class="next-slide">
+            &rarr;
+          </a>
+        {%- endif -%}
+      </div>
+    </li>
+  {%- endfor -%}
+</ol>
