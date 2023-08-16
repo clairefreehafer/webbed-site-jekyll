@@ -3,6 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ "/assets/styles/main.css" | relative_url }}">
+
   {%- if layout.css -%}
     <link rel="stylesheet" href="/assets/styles/{{ layout.css }}.css">
   {%- endif -%}
@@ -13,30 +14,7 @@
 
   {%- if page.path contains "animal_crossing" -%}
     {%- include animal_crossing/head.html -%}
-  {%- endif -%}
-
-  {%- if layout.theme == "animal_crossing" -%}
-    <link rel="stylesheet" href="{{ "/assets/styles/animal_crossing.css" | relative_url }}">
-    <style>
-      body {
-        background-image: url("/assets/images/grass/{%- grass_color square page.date -%}");
-      }
-
-      .page-content {
-        background-image: url("/assets/images/sand/{%- grass_color square page.date -%}");
-      }
-    </style>
-
-  {%- elsif layout.theme == "zelda" -%}
+  {%- elsif page.path contains "zelda" -%}
     <link rel="stylesheet" href="{{ "/assets/styles/zelda.css" | relative_url }}">
-
-  {%- elsif page.game == "new_horizons" -%}
-    <!-- <link rel="stylesheet" href="{{ "/assets/styles/new_horizons.css" | relative_url }}"> -->
-    <style>
-      body {
-        background-image: url("/assets/images/grass/{%- grass_color triangle page.date -%}");
-      }
-    </style>
-
   {%- endif -%}
 </head>

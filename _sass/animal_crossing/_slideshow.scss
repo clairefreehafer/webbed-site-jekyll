@@ -1,3 +1,5 @@
+@import "mixins";
+
 body {
   --border-width: 5%;
 }
@@ -13,13 +15,9 @@ ol, li {
 }
 
 .back {
-  background-color: rgb(248, 245, 223, 0.8);
-  border-radius: 3rem;
-  box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  @include ui_element;
   display: flex;
-  font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
   font-size: 1rem;
-  font-weight: 200;
   left: 0.5rem;
   padding: 0.5rem 1rem;
   position: absolute;
@@ -61,16 +59,12 @@ ol, li {
 }
 
 .slide-info {
-  right: 0.5rem;
-  background-color: rgb(248, 245, 223, 0.8);
-  border-radius: 3rem;
-  box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  @include ui_element;
   display: flex;
-  font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
   font-size: 1rem;
-  font-weight: 200;
   padding: 0.5rem 1rem;
   position: absolute;
+  right: 0.5rem;
   text-align: center;
   text-decoration: none;
   top: 0.5rem;
@@ -149,13 +143,9 @@ ol, li {
 }
 
 .slide-navigation {
-  background-color: rgb(248, 245, 223, 0.8);
+  @include ui_element;
   bottom: 0.5rem;
-  border-radius: 3rem;
-  box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
-  font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
   font-size: 1.5rem;
-  font-weight: 200;
   left: 50%;
   padding: 0.5rem 1.5rem;
   position: absolute;

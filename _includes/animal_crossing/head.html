@@ -1,3 +1,19 @@
-{%- if page.layout == "slideshow" -%}
-  <link rel="stylesheet" href="/assets/animal_crossing/styles/slideshow.css">
-{%- endif -%}
+<link rel="stylesheet" href="/assets/styles/animal_crossing.css">
+
+{%- capture shape -%}
+  {%- if page.game == "new_horizons" -%}
+    triangle
+  {%- else -%}
+    square
+  {%- endif -%}
+{%- endcapture -%}
+
+<style>
+  body {
+    background-image: url("/assets/images/grass/{%- grass_color -%}");
+  }
+
+  .page-content {
+    background-image: url("/assets/images/sand/{%- grass_color -%}");
+  }
+</style>

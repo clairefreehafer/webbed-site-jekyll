@@ -1,0 +1,10 @@
+@import "variables";
+
+// element mocking the look of dialogue boxes
+@mixin ui_element {
+  background-color: $ui_background_color;
+  border-radius: $ui_border_radius;
+  box-shadow: $ui_box_shadow;
+  font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
+  font-weight: 200;
+}
