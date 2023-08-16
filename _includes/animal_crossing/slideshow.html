@@ -11,8 +11,17 @@
     {%- assign current_slide = forloop.index -%}
 
     <li class="slide" id="slide-{{ forloop.index }}">
+      <details class="slide-info">
+        <summary>info</summary>
+        nothing here yet :)
+      </details>
       <div class="slide-snapper"></div>
-      <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+      <div class="photo-border {{ hide_border }}">
+        <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+        <div class="photo-inset-shadow-helper {{ hide_border }}">
+          <div class="photo-inset-shadow"></div>
+        </div>
+      </div>
       <div class="slide-navigation">
         {%- if forloop.index > 1 -%}
           <a href="#slide-{{ forloop.index | minus: 1 }}" class="previous-slide">

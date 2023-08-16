@@ -7,6 +7,9 @@ script: slideshow
   {%- include head.html -%}
 
   <body>
+    <nav class="back">
+      <a href="/{{ page.collection }}.html">back</a>
+    </nav>
     <main class="slideshow">
       {%- if page.path contains "animal_crossing" -%}
         {%- include animal_crossing/slideshow.html -%}

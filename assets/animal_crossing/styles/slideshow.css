@@ -1,7 +1,32 @@
+body {
+  --border-width: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
 ol, li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.back {
+  background-color: rgb(248, 245, 223, 0.8);
+  border-radius: 3rem;
+  box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  left: 0.5rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 0.5rem;
+  z-index: 2;
 }
 
 .slideshow {
@@ -35,6 +60,31 @@ ol, li {
   flex-direction: column;
 }
 
+.slide-info {
+  right: 0.5rem;
+  background-color: rgb(248, 245, 223, 0.8);
+  border-radius: 3rem;
+  box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 0.5rem;
+  z-index: 2;
+}
+
+.slide-info[open] {
+  padding: 1rem 2rem;
+}
+
+.slide-info > summary {
+  text-align: right;
+}
+
 .slide-snapper {
   position: absolute;
   top: 0;
@@ -47,6 +97,55 @@ ol, li {
 
 .photo {
   width: 100%;
+  margin: 0 var(--border-width);
+}
+
+.photo-border {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0 0 0.25rem 0.1rem rgba(0, 0, 0, 0.3),
+              0 0 1.5rem 0.1rem rgba(0, 0, 0, 0.3);
+  max-height: calc(100vh - 10rem);
+  place-self: center;
+  padding: var(--border-width) 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  margin: 5% 0;
+}
+
+.photo-border.hide-border {
+  padding: 0;
+}
+
+.hide-border > .photo {
+  margin: 0;
+}
+
+.photo-inset-shadow-helper {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  top: 0;
+  padding: var(--border-width) 0;
+}
+
+.photo-inset-shadow-helper.hide-border {
+  display: none;
+}
+
+.photo-inset-shadow {
+  border-radius: 1%;
+  box-shadow: inset 0 0 0.25rem 0.1rem rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  margin: 0 var(--border-width);
+  max-width: 90%;
 }
 
 .slide-navigation {
@@ -59,7 +158,7 @@ ol, li {
   font-size: 1.5rem;
   font-weight: 200;
   left: 50%;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   position: absolute;
   text-align: center;
   text-decoration: none;
