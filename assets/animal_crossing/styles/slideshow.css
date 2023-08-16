@@ -54,7 +54,7 @@ ol, li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: var(--border-width);
   box-sizing: border-box;
   counter-increment: slides;
   flex-direction: column;
@@ -153,14 +153,13 @@ ol, li {
   bottom: 0.5rem;
   border-radius: 3rem;
   box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
-  display: flex;
   font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
   font-size: 1.5rem;
   font-weight: 200;
   left: 50%;
   padding: 0.5rem 1.5rem;
   position: absolute;
-  text-align: center;
   text-decoration: none;
   transform: translateX(-50%);
+  white-space: nowrap;
 }

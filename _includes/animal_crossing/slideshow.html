@@ -29,7 +29,7 @@
           </a>
           &nbsp;
         {%- endif -%}
-        <span class="slide-count">{{ forloop.index }} / {{ forloop.length }}</span>
+        {{ forloop.index }} / {{ forloop.length }}
         {%- if forloop.index < forloop.length -%}
           &nbsp;
           <a href="#slide-{{ forloop.index | plus: 1 }}" class="next-slide">

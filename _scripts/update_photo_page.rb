@@ -48,6 +48,11 @@ album_key = page_config['album_key']
 if album_key then
   images = Smugmug.fetch(Smugmug.generate_api_url(album_key, 'album', 'images'))['Response']['AlbumImage']
 
+  if not images
+    puts "❌ no images found for #{file_path}"
+    exit
+  end
+
   for image in images do
     largest_image_uri = image['Uris']['LargestImage']['Uri']
 
