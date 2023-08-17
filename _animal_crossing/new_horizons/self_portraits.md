@@ -1,15 +1,7 @@
 ---
 title: self portraits
-date: 2020-03-21
+album_key: 37TJ9c
+date: 2020-06-13
 game: new_horizons
-layout: photo_grid
-theme: new_horizons
-images:
-  - 2020-03-21_18-29-51
-  - 2020-03-21_21_18_18
-  - 2020-03-22_18-36-44
-  - 2020-03-22_20-44-50
-  - 2020-03-22_22-05-17
-  - 2020-03-29_22-18-56
-  - 2020-05-02_09-13-01
+layout: slideshow
 ---

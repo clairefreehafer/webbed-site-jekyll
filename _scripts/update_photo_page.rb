@@ -73,6 +73,10 @@ if album_key then
       'tags' => image['KeywordArray']
     }
 
+    if existing_data and existing_data['has_border'] then
+      data_to_save['has_border'] = true
+    end
+
     output_array.push(data_to_save)
   end
 else

@@ -11,10 +11,6 @@
     {%- assign current_slide = forloop.index -%}
 
     <li class="slide" id="slide-{{ forloop.index }}">
-      <details class="slide-info">
-        <summary>info</summary>
-        nothing here yet :)
-      </details>
       <div class="slide-snapper"></div>
       <div class="photo-border {{ hide_border }}">
         <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />

@@ -1,12 +1,11 @@
 ---
-- src: https://photos.smugmug.com/photos/i-TwR9DBP/2/X2/i-TwR9DBP-X2.jpg
+- src: https://photos.smugmug.com/photos/i-jD8CT7z/2/X2/i-jD8CT7z-X2.jpg
   alt: ''
   title: ''
   caption: ''
-  has_border: true
   tags:
   - nintendo switch
-  - dom
+  has_border: true
 - src: https://photos.smugmug.com/photos/i-bDwvjjK/2/X2/i-bDwvjjK-X2.jpg
   alt: ''
   title: ''
@@ -34,58 +33,11 @@
   - nintendo switch
   - gif
   - dom
-- src: https://photos.smugmug.com/photos/i-dbb2trr/0/X2/i-dbb2trr-X2.gif
-  alt: ''
-  title: Ken
-  caption: ''
-  has_border: true
-  tags:
-  - nintendo switch
-  - gif
-  - dom
-- src: https://photos.smugmug.com/photos/i-RGWBWnm/0/X2/i-RGWBWnm-X2.gif
-  alt: ''
-  title: Ken
-  caption: ''
-  has_border: true
-  tags:
-  - nintendo switch
-  - gif
-  - dom
 - src: https://photos.smugmug.com/photos/i-LkqX55x/2/X2/i-LkqX55x-X2.jpg
   alt: ''
   title: ''
   caption: ''
   has_border: true
-  tags:
-  - nintendo switch
-  - dom
-- src: https://photos.smugmug.com/photos/i-npCbMtf/2/X2/i-npCbMtf-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  has_border: true
-  tags:
-  - nintendo switch
-  - dom
-- src: https://photos.smugmug.com/photos/i-Jf5SZrf/2/X2/i-Jf5SZrf-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  tags:
-  - nintendo switch
-  - dom
-- src: https://photos.smugmug.com/photos/i-WdPHWFg/2/X2/i-WdPHWFg-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  tags:
-  - nintendo switch
-  - dom
-- src: https://photos.smugmug.com/photos/i-Ns2wHjN/2/X2/i-Ns2wHjN-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
   tags:
   - nintendo switch
   - dom
@@ -96,6 +48,12 @@
   tags:
   - nintendo switch
   - dom
+- src: https://photos.smugmug.com/photos/i-CS7Mbwx/2/X2/i-CS7Mbwx-X2.jpg
+  alt: ''
+  title: ''
+  caption: ''
+  tags:
+  - nintendo switch
 - src: https://photos.smugmug.com/photos/i-sb2nnXj/2/X2/i-sb2nnXj-X2.jpg
   alt: ''
   title: stan
@@ -106,13 +64,6 @@
 - src: https://photos.smugmug.com/photos/i-fKkHJh3/2/X2/i-fKkHJh3-X2.jpg
   alt: ''
   title: Dom
-  caption: ''
-  tags:
-  - nintendo switch
-  - dom
-- src: https://photos.smugmug.com/photos/i-kms84tD/2/X2/i-kms84tD-X2.jpg
-  alt: ''
-  title: ''
   caption: ''
   tags:
   - nintendo switch
