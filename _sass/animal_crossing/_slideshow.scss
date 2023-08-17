@@ -1,8 +1,5 @@
 @import "mixins";
-
-body {
-  --border-width: 5%;
-}
+@import "variables";
 
 a {
   text-decoration: none;
@@ -89,8 +86,8 @@ ol, li {
 }
 
 .photo {
-  width: 90%;
-  margin: var(--border-width);
+  width: calc(100% - 2 * $photo_border_width);
+  margin: $photo_border_width;
   object-fit: contain;
 }
 
@@ -118,12 +115,12 @@ ol, li {
   box-sizing: border-box;
   position: absolute;
   z-index: 2;
-  height: 100%;
   width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
   top: 0;
-  padding: var(--border-width) 0;
+  padding: $photo_border_width 0;
 }
 
 .photo-inset-shadow-helper.hide-border {
@@ -135,8 +132,30 @@ ol, li {
   box-shadow: inset 0 0 0.25rem 0.1rem rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
-  margin: 0 var(--border-width);
-  max-width: 90%;
+  margin: 0 $photo_border_width;
+  max-width: calc(100% - 2 * $photo_border_width);
+}
+
+.photo-date {
+  font-family: "Digital Display", sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: calc($photo_border_width + 2rem);
+  font-size: 2rem;
+  color: orange;
+  text-shadow: 0 0 3px orange,
+  0 0 5px orangered, 0 0 10px orangered;
+  opacity: 0.9;
+  display: none;
+
+  &.show-date {
+    display: block;
+  }
+}
+
+.hide-border > .photo-date {
+  margin: calc($photo_border_width + 0.5rem);
 }
 
 .slide-navigation {

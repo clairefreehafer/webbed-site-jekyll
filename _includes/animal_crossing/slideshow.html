@@ -8,6 +8,12 @@
       {%- endif -%}
     {%- endcapture -%}
 
+    {%- capture show_date -%}
+      {%- if image.show_date -%}
+        show-date
+      {%- endif -%}
+    {%- endcapture -%}
+
     {%- assign current_slide = forloop.index -%}
 
     <li class="slide" id="slide-{{ forloop.index }}">
@@ -17,6 +23,7 @@
         <div class="photo-inset-shadow-helper {{ hide_border }}">
           <div class="photo-inset-shadow"></div>
         </div>
+        <div class="photo-date {{ show_date }}">{{ image.date | date: "%m/%d/%Y" }}</div>
       </div>
     </li>
   {%- endfor -%}

@@ -1,10 +1,13 @@
 ---
 - src: https://photos.smugmug.com/photos/i-6XNT2sJ/2/X2/i-6XNT2sJ-X2.jpg
-  alt: 'a photo of a skeleton at sunset. it is on the island peninsula facing out towards the sea.'
+  alt: a photo of a skeleton at sunset. it is on the island peninsula facing out towards
+    the sea.
   title: ''
   caption: ''
   tags:
   - nintendo switch
+  date: 2020-03-22 18:37:28
+  show_date: true
 - src: https://photos.smugmug.com/photos/i-9VQPmzx/1/X2/i-9VQPmzx-X2.jpg
   alt: ''
   title: ''
@@ -12,6 +15,7 @@
   tags:
   - black and white
   - nintendo switch
+  date: 2020-05-06 01:31:35
 - src: https://photos.smugmug.com/photos/i-CGcHfpp/2/X2/i-CGcHfpp-X2.jpg
   alt: ''
   title: ''
@@ -19,3 +23,4 @@
   tags:
   - black and white
   - nintendo switch
+  date: 2020-05-06 01:33:32

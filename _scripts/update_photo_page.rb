@@ -1,5 +1,6 @@
 require 'yaml'
 require 'date'
+require 'time'
 require 'uri'
 require 'net/http'
 require 'json'
@@ -37,11 +38,11 @@ end
 
 # check if we already have a data file
 if File.exist?("./_data/#{file_path}.yml")
-  data = YAML.load_file("./_data/#{file_path}.yml", permitted_classes: [Date])
+  data = YAML.load_file("./_data/#{file_path}.yml", permitted_classes: [Date, Time])
   puts "➡️  existing data found for #{file_path}"
 end
 
-page_config = YAML.load_file("./_#{file_path}.md", permitted_classes: [Date])
+page_config = YAML.load_file("./_#{file_path}.md", permitted_classes: [Date, Time])
 output_array = [];
 album_key = page_config['album_key']
 
@@ -88,6 +89,10 @@ if album_key then
 
     if existing_data and existing_data['has_border'] then
       data_to_save['has_border'] = true
+    end
+
+    if existing_data and existing_data['show_date'] then
+      data_to_save['show_date'] = true
     end
 
     output_array.push(data_to_save)

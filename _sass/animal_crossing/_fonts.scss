@@ -9,8 +9,16 @@
 @font-face {
   font-family: "FOT Seurat Pro B";
   src: url("/assets/fonts/fot-seurat__pro_b.otf") format("opentype"),
-        url("/assets/fonts/fot-seurat_pro_b-webfont.woff2") format("woff2"),
+       url("/assets/fonts/fot-seurat_pro_b-webfont.woff2") format("woff2"),
        url("/assets/fonts/fot-seurat_pro_b-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Digital Display";
+  src: url("/assets/fonts/ds-digii-webfont.woff2") format("woff2"),
+       url("/assets/fonts/ds-digii-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
