@@ -13,25 +13,10 @@
     <li class="slide" id="slide-{{ forloop.index }}">
       <div class="slide-snapper"></div>
       <div class="photo-border {{ hide_border }}">
-        <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+        <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" id="image-{{ forloop.index }}" data-title="{{ image.title }}" data-date="{{ image.date }}" />
         <div class="photo-inset-shadow-helper {{ hide_border }}">
           <div class="photo-inset-shadow"></div>
         </div>
-      </div>
-      <div class="slide-navigation">
-        {%- if forloop.index > 1 -%}
-          <a href="#slide-{{ forloop.index | minus: 1 }}" class="previous-slide">
-            &larr;
-          </a>
-          &nbsp;
-        {%- endif -%}
-        {{ forloop.index }} / {{ forloop.length }}
-        {%- if forloop.index < forloop.length -%}
-          &nbsp;
-          <a href="#slide-{{ forloop.index | plus: 1 }}" class="next-slide">
-            &rarr;
-          </a>
-        {%- endif -%}
       </div>
     </li>
   {%- endfor -%}

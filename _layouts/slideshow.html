@@ -12,11 +12,11 @@ script: slideshow
     </nav>
     {%- if page.info -%}
       <details class="slide-info">
-        <summary>{{ page.title }}</summary>
+        <summary id="page-title">{{ page.title }}</summary>
         {{ page.info }}
       </details>
     {%- else -%}
-      <div class="slide-info">
+      <div class="slide-info" id="page-title">
         {{ page.title }}
       </div>
     {%- endif -%}
@@ -27,6 +27,17 @@ script: slideshow
         {%- include photography/slideshow.html -%}
       {%- endif -%}
     </main>
+    <div class="slide-navigation">
+      <a href="#slide-1" class="previous-slide" id="previous-slide">
+        &larr;
+      </a>
+      &nbsp;
+      <span id="current-slide">1</span> / <span id="total-slides">{{ site.data.animal_crossing[page.game][page.slug].size }}</span>
+      &nbsp;
+      <a href="#slide-2" class="next-slide" id="next-slide">
+        &rarr;
+      </a>
+    </div>
   </body>
 
 </html>
