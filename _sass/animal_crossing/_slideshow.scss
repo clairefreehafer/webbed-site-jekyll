@@ -52,7 +52,6 @@ ol, li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--border-width);
   box-sizing: border-box;
   counter-increment: slides;
   flex-direction: column;
@@ -90,23 +89,20 @@ ol, li {
 }
 
 .photo {
-  width: 100%;
-  margin: 0 var(--border-width);
+  width: 90%;
+  margin: var(--border-width);
+  object-fit: contain;
 }
 
 .photo-border {
   background: rgba(255, 255, 255, 1);
   box-shadow: inset 0 0 0.25rem 0.1rem rgba(0, 0, 0, 0.3),
               0 0 1.5rem 0.1rem rgba(0, 0, 0, 0.3);
-  max-height: calc(100vh - 10rem);
   place-self: center;
-  padding: var(--border-width) 0;
   position: relative;
   display: flex;
-  width: 100%;
   max-width: 1280px;
-  height: auto;
-  margin: 5% 0;
+  margin: 5%;
 }
 
 .photo-border.hide-border {
@@ -115,6 +111,7 @@ ol, li {
 
 .hide-border > .photo {
   margin: 0;
+  width: 100%;
 }
 
 .photo-inset-shadow-helper {
