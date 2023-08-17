@@ -37,7 +37,7 @@ end
 
 # check if we already have a data file
 if File.exist?("./_data/#{file_path}.yml")
-  data = YAML.load_file("./_data/#{file_path}.yml")
+  data = YAML.load_file("./_data/#{file_path}.yml", permitted_classes: [Date])
   puts "➡️  existing data found for #{file_path}"
 end
 
@@ -72,6 +72,19 @@ if album_key then
       'caption' => image['Caption'],
       'tags' => image['KeywordArray']
     }
+
+    unless section == 'zelda'
+      if image['DateTimeOriginal'] then
+        data_to_save['date'] = DateTime.parse(image['DateTimeOriginal']).strftime('%F %T')
+      else
+        # X__X animal crossing photos don't have DateTimeOriginal for some reason...
+        filename = image['FileName']
+        filename[10] = 'T'
+        filename[13] = ':'
+        filename[16] = ':'
+        data_to_save['date'] = DateTime.parse(filename).strftime('%F %T')
+      end
+    end
 
     if existing_data and existing_data['has_border'] then
       data_to_save['has_border'] = true

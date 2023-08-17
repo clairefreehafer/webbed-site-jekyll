@@ -1,66 +1,4 @@
 ---
-- src: https://photos.smugmug.com/photos/i-jD8CT7z/2/X2/i-jD8CT7z-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  tags:
-  - nintendo switch
-  has_border: true
-- src: https://photos.smugmug.com/photos/i-bDwvjjK/2/X2/i-bDwvjjK-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  has_border: true
-  tags:
-  - nintendo switch
-  - dom
-- src: https://photos.smugmug.com/photos/i-62mBwVB/0/X2/i-62mBwVB-X2.gif
-  alt: ''
-  title: Dom
-  caption: ''
-  has_border: true
-  tags:
-  - nintendo switch
-  - gif
-  - black and white
-  - dom
-- src: https://photos.smugmug.com/photos/i-KSBhwC8/0/X2/i-KSBhwC8-X2.gif
-  alt: ''
-  title: Dom
-  caption: ''
-  has_border: true
-  tags:
-  - nintendo switch
-  - gif
-  - dom
-- src: https://photos.smugmug.com/photos/i-LkqX55x/2/X2/i-LkqX55x-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  has_border: true
-  tags:
-  - nintendo switch
-  - dom
-- src: https://photos.smugmug.com/photos/i-NTkHvB7/2/X2/i-NTkHvB7-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  tags:
-  - nintendo switch
-  - dom
-- src: https://photos.smugmug.com/photos/i-CS7Mbwx/2/X2/i-CS7Mbwx-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  tags:
-  - nintendo switch
-- src: https://photos.smugmug.com/photos/i-sb2nnXj/2/X2/i-sb2nnXj-X2.jpg
-  alt: ''
-  title: stan
-  caption: ''
-  tags:
-  - nintendo switch
-  - dom
 - src: https://photos.smugmug.com/photos/i-fKkHJh3/2/X2/i-fKkHJh3-X2.jpg
   alt: ''
   title: Dom
@@ -68,3 +6,74 @@
   tags:
   - nintendo switch
   - dom
+  date: 2020-05-06 18:58:31
+- src: https://photos.smugmug.com/photos/i-sb2nnXj/2/X2/i-sb2nnXj-X2.jpg
+  alt: ''
+  title: stan
+  caption: ''
+  tags:
+  - nintendo switch
+  - dom
+  date: 2020-05-09 19:12:44
+- src: https://photos.smugmug.com/photos/i-CS7Mbwx/2/X2/i-CS7Mbwx-X2.jpg
+  alt: ''
+  title: ''
+  caption: ''
+  tags:
+  - nintendo switch
+  date: 2020-05-17 22:42:21
+- src: https://photos.smugmug.com/photos/i-NTkHvB7/2/X2/i-NTkHvB7-X2.jpg
+  alt: ''
+  title: ''
+  caption: ''
+  tags:
+  - nintendo switch
+  - dom
+  date: 2020-05-27 23:16:33
+- src: https://photos.smugmug.com/photos/i-LkqX55x/2/X2/i-LkqX55x-X2.jpg
+  alt: ''
+  title: ''
+  caption: ''
+  tags:
+  - nintendo switch
+  - dom
+  date: 2020-06-17 23:02:24
+  has_border: true
+- src: https://photos.smugmug.com/photos/i-KSBhwC8/0/X2/i-KSBhwC8-X2.gif
+  alt: ''
+  title: Dom
+  caption: ''
+  tags:
+  - nintendo switch
+  - gif
+  - dom
+  date: 2020-06-17 23:02:41
+  has_border: true
+- src: https://photos.smugmug.com/photos/i-62mBwVB/0/X2/i-62mBwVB-X2.gif
+  alt: ''
+  title: Dom
+  caption: ''
+  tags:
+  - nintendo switch
+  - gif
+  - black and white
+  - dom
+  date: 2020-06-17 23:03:03
+  has_border: true
+- src: https://photos.smugmug.com/photos/i-bDwvjjK/2/X2/i-bDwvjjK-X2.jpg
+  alt: ''
+  title: ''
+  caption: ''
+  tags:
+  - nintendo switch
+  - dom
+  date: 2020-06-19 23:37:04
+  has_border: true
+- src: https://photos.smugmug.com/photos/i-jD8CT7z/2/X2/i-jD8CT7z-X2.jpg
+  alt: ''
+  title: ''
+  caption: ''
+  tags:
+  - nintendo switch
+  date: 2020-07-22 11:12:11
+  has_border: true
