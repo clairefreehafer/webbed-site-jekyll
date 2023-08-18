@@ -141,8 +141,8 @@ ol, li {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: calc($photo_border_width + 2rem);
-  font-size: 2rem;
+  margin: calc(1.5 * $photo_border_width) calc(2 * $photo_border_width);
+  font-size: 5vw;
   color: orange;
   text-shadow: 0 0 3px orange,
   0 0 5px orangered, 0 0 10px orangered;
