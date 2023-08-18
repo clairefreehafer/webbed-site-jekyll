@@ -1,45 +1,14 @@
 ---
-- src: https://photos.smugmug.com/photos/i-TwR9DBP/2/X2/i-TwR9DBP-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  has_border: true
-  tags:
-  - nintendo switch
-  - dom
-  - flurry
 - src: https://photos.smugmug.com/photos/i-VCJ6gVP/2/X2/i-VCJ6gVP-X2.jpg
   alt: ''
   title: ''
   caption: ''
+  tags:
+  - nintendo switch
+  - flurry
+  date: 2020-07-20 11:10:23
   has_border: true
-  tags:
-  - nintendo switch
-  - flurry
-- src: https://photos.smugmug.com/photos/i-BCkmK3F/0/X2/i-BCkmK3F-X2.gif
-  alt: ''
-  title: my birthday
-  caption: ''
-  tags:
-  - gif
-  - nintendo switch
-  - flurry
-- src: https://photos.smugmug.com/photos/i-VvxL939/2/X2/i-VvxL939-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  has_border: true
-  tags:
-  - nintendo switch
-  - flurry
-- src: https://photos.smugmug.com/photos/i-kQFfDcd/2/X2/i-kQFfDcd-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  tags:
-  - nintendo switch
-  - flurry
-- src: https://photos.smugmug.com/photos/i-Jf5SZrf/2/X2/i-Jf5SZrf-X2.jpg
+- src: https://photos.smugmug.com/photos/i-TwR9DBP/2/X2/i-TwR9DBP-X2.jpg
   alt: ''
   title: ''
   caption: ''
@@ -47,32 +16,5 @@
   - nintendo switch
   - dom
   - flurry
-- src: https://photos.smugmug.com/photos/i-Ns2wHjN/2/X2/i-Ns2wHjN-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  tags:
-  - nintendo switch
-  - dom
-  - flurry
-- src: https://photos.smugmug.com/photos/i-ZzWj26x/2/X2/i-ZzWj26x-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  tags:
-  - nintendo switch
-  - flurry
-- src: https://photos.smugmug.com/photos/i-CkM8dHZ/2/X2/i-CkM8dHZ-X2.jpg
-  alt: ''
-  title: ''
-  caption: ''
-  tags:
-  - nintendo switch
-  - flurry
-- src: https://photos.smugmug.com/photos/i-3fKtvhL/2/X2/i-3fKtvhL-X2.jpg
-  alt: ''
-  title: the gang's all here
-  caption: ''
-  tags:
-  - nintendo switch
-  - flurry
+  date: 2020-08-01 12:19:22
+  has_border: true
