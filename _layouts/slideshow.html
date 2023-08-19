@@ -1,6 +1,15 @@
 ---
 script: slideshow
 ---
+{%- capture section -%}
+  {%- if page.path contains "animal_crossing" -%}
+    animal_crossing
+  {%- elsif page.path contains "zelda" -%}
+    zelda
+  {%- endif -%}
+{%- endcapture -%}
+
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
@@ -23,16 +32,19 @@ script: slideshow
     <main class="slideshow">
       {%- if page.path contains "animal_crossing" -%}
         {%- include animal_crossing/slideshow.html -%}
+      {%- elsif page.path contains "zelda" -%}
+        {%- include zelda/slideshow.html -%}
       {%- else -%}
         {%- include photography/slideshow.html -%}
       {%- endif -%}
     </main>
+
     <div class="slide-navigation">
       <a href="#slide-1" class="previous-slide" id="previous-slide">
         &larr;
       </a>
       &nbsp;
-      <span id="current-slide">1</span> / <span id="total-slides">{{ site.data.animal_crossing[page.game][page.slug].size }}</span>
+      <span id="current-slide">1</span> / <span id="total-slides">{{ site.data[section][page.game][page.slug].size }}</span>
       &nbsp;
       <a href="#slide-2" class="next-slide" id="next-slide">
         &rarr;
