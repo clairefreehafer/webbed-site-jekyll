@@ -7,7 +7,8 @@
   tags:
   - nintendo switch
   date: 2020-03-23 17:26:22
-  show_date: true
+  extras:
+    show_date: true
 - src: https://photos.smugmug.com/photos/i-CmsD7jg/3/L/i-CmsD7jg-L.jpg
   alt: ''
   title: oar fish
@@ -15,7 +16,8 @@
   tags:
   - nintendo switch
   date: 2020-03-26 21:44:26
-  show_date: true
+  extras:
+    show_date: true
 - src: https://photos.smugmug.com/photos/i-TH2mFQx/2/X2/i-TH2mFQx-X2.jpg
   alt: ''
   title: ''

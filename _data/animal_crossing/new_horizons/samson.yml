@@ -6,7 +6,8 @@
   tags:
   - nintendo switch
   date: 2020-05-11 17:12:02
-  has_border: true
+  extras:
+    has_border: true
 - src: https://photos.smugmug.com/photos/i-2Hzfczv/2/X2/i-2Hzfczv-X2.jpg
   alt: ''
   title: Flora & Samson
@@ -14,4 +15,5 @@
   tags:
   - nintendo switch
   date: 2020-06-09 22:26:02
-  has_border: true
+  extras:
+    has_border: true

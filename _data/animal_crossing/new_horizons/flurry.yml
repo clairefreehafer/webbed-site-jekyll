@@ -7,7 +7,8 @@
   - nintendo switch
   - flurry
   date: 2020-07-20 11:10:23
-  has_border: true
+  extras:
+    has_border: true
 - src: https://photos.smugmug.com/photos/i-TwR9DBP/2/X2/i-TwR9DBP-X2.jpg
   alt: ''
   title: ''
@@ -17,4 +18,5 @@
   - dom
   - flurry
   date: 2020-08-01 12:19:22
-  has_border: true
+  extras:
+    has_border: true

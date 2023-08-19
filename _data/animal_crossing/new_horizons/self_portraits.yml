@@ -6,7 +6,8 @@
   tags:
   - nintendo switch
   date: 2020-06-13 16:53:17
-  has_border: true
+  extras:
+    has_border: true
 - src: https://photos.smugmug.com/photos/i-smf8x2W/2/X2/i-smf8x2W-X2.jpg
   alt: ''
   title: ''
@@ -14,7 +15,8 @@
   tags:
   - nintendo switch
   date: 2020-06-06 19:41:03
-  show_date: true
+  extras:
+    show_date: true
 - src: https://photos.smugmug.com/photos/i-N4dcxSz/2/X2/i-N4dcxSz-X2.jpg
   alt: ''
   title: ''
@@ -22,7 +24,8 @@
   tags:
   - nintendo switch
   date: 2020-06-01 18:48:32
-  show_date: true
+  extras:
+    show_date: true
 - src: https://photos.smugmug.com/photos/i-LX6Fc9m/2/X2/i-LX6Fc9m-X2.jpg
   alt: my character sits on a bench in the plaza. the bench is clipping into one of
     the stools set up for k.k. slider's saturday concert.
@@ -47,7 +50,8 @@
   tags:
   - nintendo switch
   date: 2020-03-22 22:05:17
-  show_date: true
+  extras:
+    show_date: true
 - src: https://photos.smugmug.com/photos/i-V4tCsGV/2/X2/i-V4tCsGV-X2.jpg
   alt: a photo of my character standing at the entrance to the island at dusk. there
     is a torch on either side of them.

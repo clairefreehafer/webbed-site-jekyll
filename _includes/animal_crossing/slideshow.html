@@ -3,13 +3,13 @@
 <ol class="slideshow-wrapper" id="scroll-container">
   {%- for image in images -%}
     {%- capture hide_border -%}
-      {%- if image.has_border -%}
+      {%- if image.extras.has_border -%}
         hide-border
       {%- endif -%}
     {%- endcapture -%}
 
     {%- capture show_date -%}
-      {%- if image.show_date -%}
+      {%- if image.extras.show_date -%}
         show-date
       {%- endif -%}
     {%- endcapture -%}

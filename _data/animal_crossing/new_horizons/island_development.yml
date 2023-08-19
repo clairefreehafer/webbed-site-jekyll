@@ -7,4 +7,5 @@
   - nintendo switch
   - dom
   date: 2020-04-06 18:18:14
-  show_date: true
+  extras:
+    show_date: true

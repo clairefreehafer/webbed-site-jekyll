@@ -1,6 +1,10 @@
 @import "mixins";
 @import "variables";
 
+body {
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -13,7 +17,6 @@ ol, li {
 
 .back {
   @include ui_element;
-  display: flex;
   font-size: 1rem;
   left: 0.5rem;
   padding: 0.5rem 1rem;

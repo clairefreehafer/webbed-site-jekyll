@@ -3,7 +3,8 @@
   alt: ''
   title: Sprinkle
   caption: ''
-  has_border: true
+  extras:
+    has_border: true
   tags:
   - gif
   - nintendo switch
@@ -12,7 +13,8 @@
   alt: ''
   title: ''
   caption: ''
-  has_border: true
+  extras:
+    has_border: true
   tags:
   - nintendo switch
   date: 2020-06-19 21:13:47
@@ -20,7 +22,8 @@
   alt: ''
   title: ''
   caption: ''
-  has_border: true
+  extras:
+    has_border: true
   tags:
   - nintendo switch
   date: 2020-07-22 11:12:11
@@ -28,7 +31,8 @@
   alt: ''
   title: ''
   caption: ''
-  has_border: true
+  extras:
+    has_border: true
   tags:
   - nintendo switch
   date: 2020-07-24 15:23:01

@@ -65,7 +65,6 @@ if album_key then
 
     alt = (existing_data and existing_data['alt']) ? existing_data['alt'] : ''
 
-    # TODO: add date for photo and animal crossing pages
     data_to_save = {
       'src' => image_url,
       'alt' => alt,
@@ -74,6 +73,7 @@ if album_key then
       'tags' => image['KeywordArray']
     }
 
+    # don't care about date for zelda photos
     unless section == 'zelda'
       if image['DateTimeOriginal'] then
         data_to_save['date'] = DateTime.parse(image['DateTimeOriginal']).strftime('%F %T')
@@ -87,12 +87,8 @@ if album_key then
       end
     end
 
-    if existing_data and existing_data['has_border'] then
-      data_to_save['has_border'] = true
-    end
-
-    if existing_data and existing_data['show_date'] then
-      data_to_save['show_date'] = true
+    if existing_data and existing_data['extras'] then
+      data_to_save['extras'] = existing_data['extras']
     end
 
     output_array.push(data_to_save)

@@ -17,7 +17,8 @@
   alt: ''
   title: Me too
   caption: ''
-  has_border: true
+  extras:
+    has_border: true
   tags:
   - nintendo switch
   date: 2020-05-25 14:59:00
@@ -34,7 +35,8 @@
   alt: ''
   title: Ken
   caption: ''
-  has_border: true
+  extras:
+    has_border: true
   tags:
   - nintendo switch
   - gif
@@ -43,7 +45,8 @@
 - src: https://photos.smugmug.com/photos/i-dbb2trr/0/X2/i-dbb2trr-X2.gif
   alt: ''
   title: Ken
-  has_border: true
+  extras:
+    has_border: true
   caption: ''
   tags:
   - nintendo switch
@@ -53,7 +56,8 @@
 - src: https://photos.smugmug.com/photos/i-PwKZKhW/3/X2/i-PwKZKhW-X2.jpg
   alt: ''
   title: Ken & Octavian
-  show_date: true
+  extras:
+    show_date: true
   caption: ''
   tags:
   - nintendo switch
@@ -62,7 +66,8 @@
   alt: ''
   title: Ken & Octavian
   caption: ''
-  has_border: true
+  extras:
+    has_border: true
   tags:
   - nintendo switch
   date: 2020-08-07 14:11:36
@@ -70,7 +75,8 @@
   alt: ''
   title: Ken & Octavian
   caption: ''
-  has_border: true
+  extras:
+    has_border: true
   tags:
   - nintendo switch
   date: 2020-08-07 14:11:39
