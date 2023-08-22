@@ -21,17 +21,28 @@ function getCurrentVisibleImage() {
   }
 }
 
-const pageTitle = document.getElementById("page-title");
-const initialTitle = pageTitle.innerHTML;
+const slideInfo = document.getElementById("slide-info");
+const initialTitle = slideInfo.innerHTML;
 
 function updatePageTitle(currentImage) {
   const title = currentImage.getAttribute("data-title");
+  const caption = currentImage.getAttribute("data-caption");
 
-  if (title) {
-    pageTitle.innerHTML = title.toLowerCase();
+  let updatedSlideInfo;
+
+  if (caption) {
+    updatedSlideInfo = document.createElement("details");
+    const summary = document.createElement("summary");
+    summary.innerHTML = title || initialTitle;
+
+    updatedSlideInfo.append(summary, caption);
   } else {
-    pageTitle.innerHTML = initialTitle;
+    updatedSlideInfo = document.createElement("div");
+
+    updatedSlideInfo.innerHTML = title?.toLowerCase() || initialTitle;
   }
+
+  slideInfo.replaceChildren(updatedSlideInfo);
 }
 
 const currentSlide = document.getElementById("current-slide");

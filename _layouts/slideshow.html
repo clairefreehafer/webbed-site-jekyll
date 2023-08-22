@@ -19,16 +19,10 @@ script: slideshow
     <nav class="back">
       <a href="/{{ page.collection }}.html">back</a>
     </nav>
-    {%- if page.info -%}
-      <details class="slide-info">
-        <summary id="page-title">{{ page.title }}</summary>
-        {{ page.info }}
-      </details>
-    {%- else -%}
-      <div class="slide-info" id="page-title">
-        {{ page.title }}
-      </div>
-    {%- endif -%}
+    <div class="slide-info" id="slide-info">
+      {{ page.title }}
+    </div>
+
     <main class="slideshow">
       {%- if page.path contains "animal_crossing" -%}
         {%- include animal_crossing/slideshow.html -%}
