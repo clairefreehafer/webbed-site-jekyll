@@ -1,0 +1,31 @@
+---
+title: zelda
+layout: zelda
+---
+<img src="/assets/images/zelda/pad-line-1.png" class="splitter" alt="" />
+
+<h2>tears of the kingdom</h2>
+<ul>
+  {% for page in site.zelda -%}
+    {%- if page.path contains "tears_of_the_kingdom" %}
+      <li class="list-item">
+        <img src="/assets/images/page_icons/zelda/{{ page.title }}.svg" class="page-icon" alt=""> <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+      </li>
+    {%- endif -%}
+  {%- endfor %}
+</ul>
+
+<img src="/assets/images/zelda/pad-line-2.png" class="splitter" alt="" />
+
+<h2>breath of the wild</h2>
+<ul>
+  {% for page in site.zelda -%}
+    {%- if page.path contains "breath_of_the_wild" %}
+      <li class="list-item">
+        <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+      </li>
+    {%- endif -%}
+  {% endfor %}
+</ul>
+
+<img src="/assets/images/zelda/pad-line-3.png" class="splitter" alt="" />

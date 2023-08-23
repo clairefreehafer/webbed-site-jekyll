@@ -49,3 +49,13 @@ a, a:visited {
   @include white-to-blue;
   width: 100%;
 }
+
+.list-item {
+  display: flex;
+  padding: 0.25rem;
+}
+
+.page-icon {
+  max-width: 1rem;
+  margin-right: 0.5rem;
+}

@@ -16,7 +16,7 @@ theme: animal_crossing
         star_fragment_{%- star_fragment page.date -%}
       {%- endif -%}
     {%- endcapture %}
-- <img src="/assets/images/page_icons/animal_crossing/{{ icon }}.png" class="page-icon"> [{{ page.title | escape }}]({{- page.url | relative_url }})
+- <img src="/assets/images/page_icons/animal_crossing/{{ icon }}.png" class="page-icon" alt=""> [{{ page.title | escape }}]({{- page.url | relative_url }})
   {%- endif -%}
 {%- endfor %}
 
