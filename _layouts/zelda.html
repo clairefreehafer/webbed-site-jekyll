@@ -7,16 +7,17 @@ theme: zelda
   {%- include head.html -%}
 
   <body>
+    <img src="/assets/images/zelda/pad-frame-glow.png" class="border-top glow" />
+    <img src="/assets/images/zelda/pad-frame.png" class="border-top" />
 
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      {{ content }}
     </main>
 
-    <!-- zelda photo pages have purah pad ui deisgn and polaroid-like borders with comments underneath -->
+    <img src="/assets/images/zelda/pad-frame-glow.png" class="border-bottom glow" />
+    <img src="/assets/images/zelda/pad-frame.png" class="border-bottom" />
 
   </body>
 

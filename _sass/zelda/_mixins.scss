@@ -1,0 +1,17 @@
+// https://codepen.io/sosuke/pen/Pjoqqp
+// for #00d7ff
+@mixin white-to-blue {
+  filter: invert(100%) invert(19%) sepia(88%) saturate(1368%) hue-rotate(179deg) brightness(95%) contrast(101%);
+}
+
+@mixin border {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+
+  &.glow {
+    opacity: 0.5;
+    z-index: -2;
+  }
+}

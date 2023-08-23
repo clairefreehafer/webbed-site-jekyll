@@ -1,6 +1,8 @@
+@import "mixins";
+
 body {
   background-color: black;
-  background: url("/assets/images/zelda/pad-frame.png") bottom center repeat-x, url("/assets/images/zelda/pad-background.jpg") repeat;
+  background: url("/assets/images/zelda/pad-background.jpg") repeat;
   color: #76b6ff;
   min-height: 100vh;
   box-sizing: border-box;
@@ -21,4 +23,29 @@ body {
 
 a, a:visited {
   color: white;
+}
+
+.border-top {
+  @include white-to-blue;
+  @include border;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.border-bottom {
+  @include white-to-blue;
+  @include border;
+  bottom: 0;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.splitter {
+  @include white-to-blue;
+  width: 100%;
 }
