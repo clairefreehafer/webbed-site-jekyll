@@ -35,6 +35,12 @@ collections:
     output: true
   zelda:
     output: true
+    order:
+      - tears_of_the_kingdom/creatures.md
+      - tears_of_the_kingdom/monsters.md
+      - tears_of_the_kingdom/materials.md
+      - tears_of_the_kingdom/equipment.md
+      - tears_of_the_kingdom/treasure.md
 
 # Build settings
 # theme: minima
