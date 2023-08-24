@@ -12,6 +12,11 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
 }
 
+.site-header {
+  padding: 3%;
+  font-size: 1rem;
+}
+
 .site-title, .page-link {
   padding-bottom: 0.5rem;
   background-image: url("/assets/images/zelda/pad-text.png");
@@ -19,6 +24,29 @@ body {
   background-size: auto 25%;
   background-position: bottom center;
   text-decoration: none;
+}
+
+.menu-icon {
+  filter: invert(100%);
+}
+
+@media (max-width: 600px) {
+  input:checked ~ .nav-links {
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    backdrop-filter: blur(5%);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #141e5495;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;;
+  }
+
+  .page-link {
+    padding: 0.5rem;
+  }
 }
 
 a, a:visited {
