@@ -21,28 +21,68 @@ function getCurrentVisibleImage() {
   }
 }
 
+const iconTitleMapping = {
+  cave: "this photo was taken in a cave.",
+  depths: "this photo was taken in the depths.",
+  sky: "this photo was taken on a sky island.",
+  stable: "this photo was taken at a stable.",
+  surface: "this photo was taken on the surface.",
+};
+
+function generateIcon(icon) {
+  const iconElement = document.createElement("img");
+  iconElement.src = `/assets/images/zelda/image_icons/${icon}.svg`;
+  iconElement.alt = iconTitleMapping[icon];
+  iconElement.title = iconTitleMapping[icon];
+  iconElement.className = "image-icon";
+
+  return iconElement;
+}
+
 const slideInfo = document.getElementById("slide-info");
 const initialTitle = slideInfo.innerHTML;
 
 function updatePageTitle(currentImage) {
   const title = currentImage.getAttribute("data-title");
   const caption = currentImage.getAttribute("data-caption");
+  const icon = currentImage.getAttribute("data-icon");
+  // zelda only
+  const compendiumEntry = currentImage.getAttribute("data-compendium");
 
-  let updatedSlideInfo;
+  let updatedSlideInfo = [];
 
   if (caption) {
-    updatedSlideInfo = document.createElement("details");
+    const details = document.createElement("details");
     const summary = document.createElement("summary");
-    summary.innerHTML = title || initialTitle;
 
-    updatedSlideInfo.append(summary, caption);
+    summary.append(title || initialTitle);
+    details.append(summary, caption);
+
+    updatedSlideInfo.push(details);
   } else {
-    updatedSlideInfo = document.createElement("div");
+    updatedSlideInfo = [];
 
-    updatedSlideInfo.innerHTML = title?.toLowerCase() || initialTitle;
+    const titleElement = document.createElement("span");
+    titleElement.innerHTML = title?.toLowerCase() || initialTitle;
+
+    updatedSlideInfo.push(titleElement);
   }
 
-  slideInfo.replaceChildren(updatedSlideInfo);
+  if (icon) {
+    const iconElement = generateIcon(icon);
+    updatedSlideInfo.push(iconElement);
+  }
+
+  // zelda only
+  if (compendiumEntry) {
+    const compendiumElement = document.createElement("span");
+    compendiumElement.className = "compendium";
+
+    compendiumElement.innerHTML = compendiumEntry;
+    updatedSlideInfo.push(compendiumElement);
+  }
+
+  slideInfo.replaceChildren(...updatedSlideInfo);
 }
 
 const currentSlide = document.getElementById("current-slide");

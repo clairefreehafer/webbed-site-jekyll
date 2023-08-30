@@ -19,12 +19,22 @@
     <li class="slide" id="slide-{{ forloop.index }}">
       <div class="slide-snapper"></div>
       <div class="photo-border {{ hide_border }}">
-        <img src="/assets/images/zelda/ripples.png" alt="" class="ripples-bg" />
-        <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" id="image-{{ forloop.index }}" data-title="{{ image.title }}" data-caption="{{ image.caption }}" data-date="{{ image.date }}" />
+        <img src="/assets/images/zelda/ripples.png" alt="" class="photo-texture" />
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt }}"
+          title="{{ image.alt }}"
+          class="photo"
+          id="image-{{ forloop.index }}"
+          data-title="{{ image.title }}"
+          data-caption="{{ image.caption }}"
+          data-compendium="{{ image.extras.compendium }}"
+          data-icon="{{ image.extras.icon }}"
+        />
         <div class="photo-inset-shadow-helper {{ hide_border }}">
           <div class="photo-inset-shadow"></div>
         </div>
-        <img src="/assets/images/zelda/ripples.png" alt="" class="ripples-bg" />
+        <img src="/assets/images/zelda/ripples.png" alt="" class="photo-texture" />
       </div>
     </li>
   {%- endfor -%}

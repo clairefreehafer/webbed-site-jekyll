@@ -1,33 +1,68 @@
 @import "mixins";
 
-$border-width: 3%;
+.back {
+  @include text-background;
+  padding: 1rem;
+}
 
-// TODO: might not need this
-html[data-theme='zelda'] {
-  body {
-    padding: 0;
+.slide-info {
+  @include text-background;
+  padding: 1rem;
+
+  & > span {
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
-  .photo-border {
-    background: #141e5495;
-  }
+  & > details[open] {
+    & > summary {
+      margin-bottom: 1rem;
+    }
 
-  .ripples-bg {
-    @include white-to-blue;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-    opacity: 0.5;
-    height: 100%;
-    max-width: 100%;
+    & + .image-icon {
+      align-self: flex-start;
 
-    &:first-of-type {
-      transform: rotate(180deg);
-      top: 0;
-      left: 0;
-      bottom: auto;
-      right: auto;
+      & + .compendium {
+        align-self: flex-start;
+      }
     }
   }
+}
+
+.image-icon {
+  max-width: 1.5rem;
+  margin-left: 0.75rem;
+}
+
+.compendium {
+  font-family: "Hylia Serif", Georgia, serif;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.photo-border {
+  background: #141e5495;
+}
+
+.photo-texture {
+  @include white-to-blue;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  height: 100%;
+  max-width: 100%;
+
+  &:first-of-type {
+    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: auto;
+  }
+}
+
+.slide-navigation {
+  @include text-background;
+  font-family: "Hylia Serif", Georga, serif;
 }

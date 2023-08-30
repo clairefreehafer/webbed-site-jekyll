@@ -7,23 +7,22 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
   background-size: 100%, 100%;
-  margin: 0;
-  padding: 1rem;
   font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .site-header {
   padding: 3%;
-  font-size: 1rem;
 }
 
-.site-title, .page-link {
-  padding-bottom: 0.5rem;
-  background-image: url("/assets/images/zelda/pad-text.png");
-  background-repeat: no-repeat;
-  background-size: auto 25%;
-  background-position: bottom center;
-  text-decoration: none;
+.site-title {
+  font-family: "Hylia Serif", Georgia, serif;
+  font-weight: 100;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.page-link {
+  @include sheikah_underline;
 }
 
 .menu-icon {
@@ -32,16 +31,14 @@ body {
 
 @media (max-width: 600px) {
   input:checked ~ .nav-links {
-    background-color: rgba(0, 0, 0, 0.25);
-    z-index: 10;
-    backdrop-filter: blur(5px);
+    @include text-background;
     padding: 0.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid #141e5495;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;;
+    top: 60px;
   }
 
   .page-link {
@@ -67,9 +64,9 @@ a, a:visited {
 }
 
 .page-content {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0;
 }
 

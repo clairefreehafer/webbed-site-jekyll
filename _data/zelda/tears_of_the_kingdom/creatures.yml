@@ -6,11 +6,15 @@
   tags: []
   extras:
     compendium: 1
+    icon: stable
 - src: https://photos.smugmug.com/photos/i-Dnn3vVB/0/X4/i-Dnn3vVB-X4.jpg
   alt: ''
   title: giant horse
   caption: ''
   tags: []
+  extras:
+    compendium: 2
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-HSj3Fs2/0/X4/i-HSj3Fs2-X4.jpg
   alt: ''
   title: woodland boar
@@ -18,16 +22,23 @@
   tags: []
   extras:
     compendium: 11
-- src: https://photos.smugmug.com/photos/i-RVMzscG/0/X4/i-RVMzscG-X4.jpg
-  alt: ''
-  title: mountain buck
-  caption: ''
-  tags: []
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-JCDsHxb/0/X4/i-JCDsHxb-X4.jpg
   alt: ''
   title: white goat
   caption: ''
   tags: []
+  extras:
+    compendium: 14
+    icon: stable
+- src: https://photos.smugmug.com/photos/i-RVMzscG/0/X4/i-RVMzscG-X4.jpg
+  alt: ''
+  title: mountain buck
+  caption: ''
+  tags: []
+  extras:
+    compendium: 15
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-6ZvBdCF/0/X4/i-6ZvBdCF-X4.jpg
   alt: ''
   title: grassland fox
@@ -35,48 +46,70 @@
   tags: []
   extras:
     compendium: 20
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-DwXbnfh/0/X4/i-DwXbnfh-X4.jpg
   alt: ''
   title: hylian retriever
   caption: ''
   tags: []
+  extras:
+    compendium: 29
+    icon: stable
 - src: https://photos.smugmug.com/photos/i-m5vzCPX/0/X4/i-m5vzCPX-X4.jpg
   alt: ''
   title: bubbulfrog
   caption: ''
   tags: []
+  extras:
+    compendium: 31
+    icon: cave
 - src: https://photos.smugmug.com/photos/i-hzGSvgt/0/X4/i-hzGSvgt-X4.jpg
   alt: ''
   title: blue-winged heron
   caption: ''
   tags:
   - black and white
+  extras:
+    compendium: 45
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-vZD9cwf/0/X4/i-vZD9cwf-X4.jpg
   alt: ''
   title: islander hawk
   caption: ''
   tags:
   - black and white
+  extras:
+    compendium: 47
 - src: https://photos.smugmug.com/photos/i-FgCC8Dd/0/X4/i-FgCC8Dd-X4.jpg
   alt: ''
   title: cloud seagull
   caption: ''
   tags: []
+  extras:
+    compendium: 49
 - src: https://photos.smugmug.com/photos/i-b838R5q/0/X4/i-b838R5q-X4.jpg
   alt: ''
   title: cucco
   caption: ''
   tags: []
-- src: https://photos.smugmug.com/photos/i-xQMzNPk/0/X4/i-xQMzNPk-X4.jpg
-  alt: ''
-  title: fairy
-  caption: ''
-  tags: []
+  extras:
+    compendium: 52
+    icon: stable
 - src: https://photos.smugmug.com/photos/i-LbBxxdT/0/X4/i-LbBxxdT-X4.jpg
   alt: ''
   title: glowing cave fish
   caption: and a bubbulgem
   tags: []
+  extras:
+    compendium: 65
+- src: https://photos.smugmug.com/photos/i-xQMzNPk/0/X4/i-xQMzNPk-X4.jpg
+  alt: ''
+  title: fairy
+  caption: ''
+  tags: []
+  extras:
+    compendium: 72
+    icon: sky
 - src: https://photos.smugmug.com/photos/i-9zjGQbS/0/X4/i-9zjGQbS-X4.jpg
   alt: ''
   title: summerwing butterfly
@@ -84,16 +117,22 @@
   tags: []
   extras:
     compendium: 74
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-BDMJrxG/0/X4/i-BDMJrxG-X4.jpg
   alt: ''
   title: summerwing butterfly
   caption: ''
   tags: []
+  extras:
+    compendium: 74
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-86bNNXP/0/X4/i-86bNNXP-X4.jpg
   alt: ''
   title: cold darner
   caption: ''
   tags: []
+  extras:
+    compendium: 77
 - src: https://photos.smugmug.com/photos/i-V4XMrGN/0/X4/i-V4XMrGN-X4.jpg
   alt: ''
   title: hightail lizard
@@ -101,8 +140,12 @@
   tags: []
   extras:
     compendium: 89
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-w34RwNd/0/X4/i-w34RwNd-X4.jpg
   alt: ''
   title: stiicky lizard
   caption: ''
   tags: []
+  extras:
+    compendium: 92
+    icon: cave

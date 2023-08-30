@@ -1,23 +1,28 @@
 ---
 - src: https://photos.smugmug.com/photos/i-xVqQZjZ/0/X4/i-xVqQZjZ-X4.jpg
   alt: ''
-  title: 93 chuchu
+  title: chuchu
   caption: ''
   tags: []
   extras:
     compendium: 93
+    icon: depths
 - src: https://photos.smugmug.com/photos/i-NLgnSwv/0/X4/i-NLgnSwv-X4.jpg
   alt: ''
   title: keese
   caption: ''
   tags: []
+  extras:
+    compendium: 97
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-KqFjbJ5/0/X4/i-KqFjbJ5-X4.jpg
   alt: ''
-  title: 101 water octorok
+  title: water octorok
   caption: ''
   tags: []
   extras:
     compendium: 101
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-zk7RXfK/0/X4/i-zk7RXfK-X4.jpg
   alt: ''
   title: forest octorok
@@ -25,6 +30,7 @@
   tags: []
   extras:
     compendium: 102
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-kDj6xwL/0/X4/i-kDj6xwL-X4.jpg
   alt: ''
   title: fire wizzrobe
@@ -32,6 +38,7 @@
   tags: []
   extras:
     compendium: 106
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-pT8rn6r/0/X4/i-pT8rn6r-X4.jpg
   alt: ''
   title: shock like
@@ -39,6 +46,7 @@
   tags: []
   extras:
     compendium: 115
+    icon: cave
 - src: https://photos.smugmug.com/photos/i-kQ4dFcm/0/X4/i-kQ4dFcm-X4.jpg
   alt: ''
   title: evermean
@@ -46,6 +54,7 @@
   tags: []
   extras:
     compendium: 117
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-6CttSHr/0/X4/i-6CttSHr-X4.jpg
   alt: ''
   title: stalkoblin
@@ -53,11 +62,15 @@
   tags: []
   extras:
     compendium: 124
+    icon: depths
 - src: https://photos.smugmug.com/photos/i-pQVhVgs/0/X4/i-pQVhVgs-X4.jpg
   alt: ''
   title: blue horriblin
   caption: ''
   tags: []
+  extras:
+    compendium: 144
+    icon: cave
 - src: https://photos.smugmug.com/photos/i-dLZ9Fnn/0/X4/i-dLZ9Fnn-X4.jpg
   alt: ''
   title: master kohga
@@ -65,13 +78,15 @@
   tags: []
   extras:
     compendium: 165
+    icon: depths
 - src: https://photos.smugmug.com/photos/i-QFKNZvr/0/X4/i-QFKNZvr-X4.jpg
   alt: ''
-  title: 166 stone pebblit
+  title: stone pebblit
   caption: mom said it's my turn for the computer
   tags: []
   extras:
     compendium: 166
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-VXvzN4v/0/X4/i-VXvzN4v-X4.jpg
   alt: ''
   title: stone talus (luminous)
@@ -79,10 +94,12 @@
   tags: []
   extras:
     compendium: 170
+    icon: cave
 - src: https://photos.smugmug.com/photos/i-n9RvKBq/0/X4/i-n9RvKBq-X4.jpg
   alt: ''
-  title: 184 little frox
+  title: little frox
   caption: central hyrule depths
   tags: []
   extras:
     compendium: 184
+    icon: depths
