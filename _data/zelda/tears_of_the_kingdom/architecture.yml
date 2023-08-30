@@ -19,7 +19,7 @@
   caption: ''
   tags: []
   extras:
-    icon: surface # TODO: town icon
+    icon: village
 - src: https://photos.smugmug.com/photos/i-4KcT79q/0/X4/i-4KcT79q-X4.jpg
   alt: ''
   title: gerudo shelter
@@ -43,7 +43,7 @@
   caption: ''
   tags: []
   extras:
-    icon: surface
+    icon: surface # TODO: temple icon
 - src: https://photos.smugmug.com/photos/i-zgTjT7M/0/X4/i-zgTjT7M-X4.jpg
   alt: ''
   title: gerudo highlands
@@ -99,7 +99,7 @@
   caption: ''
   tags: []
   extras:
-    icon: surface # TODO: inn icon
+    icon: inn
 - src: https://photos.smugmug.com/photos/i-5w5f72M/0/X4/i-5w5f72M-X4.jpg
   alt: ''
   title: sanidin park ruins

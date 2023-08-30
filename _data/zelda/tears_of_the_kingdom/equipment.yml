@@ -46,7 +46,7 @@
   tags: []
   extras:
     compendium: 412
-    icon: surface # TODO: lookout landing icon
+    icon: village
 - src: https://photos.smugmug.com/photos/i-hmzSzKv/0/X4/i-hmzSzKv-X4.jpg
   alt: ''
   title: soldier's spear
@@ -54,7 +54,7 @@
   tags: []
   extras:
     compendium: 414
-    icon: surface # TODO: lookout landing icon
+    icon: village
 - src: https://photos.smugmug.com/photos/i-FPDL228/0/X4/i-FPDL228-X4.jpg
   alt: ''
   title: knight's halberd
@@ -62,7 +62,7 @@
   tags: []
   extras:
     compendium: 416
-    icon: surface # TODO: lookout landing icon
+    icon: village
 - src: https://photos.smugmug.com/photos/i-L7NdWCx/0/X4/i-L7NdWCx-X4.jpg
   alt: ''
   title: long stick
@@ -70,7 +70,7 @@
   tags: []
   extras:
     compendium: 432
-    icon: surface # TODO: lookout landing icon
+    icon: village
 - src: https://photos.smugmug.com/photos/i-8Pw7JCT/0/X4/i-8Pw7JCT-X4.jpg
   alt: ''
   title: construct bow
