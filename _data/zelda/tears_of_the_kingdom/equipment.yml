@@ -4,51 +4,81 @@
   title: soup ladle
   caption: ''
   tags: []
+  extras:
+    compendium: 332
+    icon: stable
 - src: https://photos.smugmug.com/photos/i-7jGc6Tm/0/X4/i-7jGc6Tm-X4.jpg
   alt: ''
   title: traveler's sword ✨
   caption: ''
   tags: []
+  extras:
+    compendium: 337
+    icon: depths
 - src: https://photos.smugmug.com/photos/i-hLKkT6K/0/X4/i-hLKkT6K-X4.jpg
   alt: ''
   title: farming hoe
   caption: ''
   tags: []
+  extras:
+    compendium: 371
+    icon: stable
 - src: https://photos.smugmug.com/photos/i-gXSLtLW/0/X4/i-gXSLtLW-X4.jpg
   alt: ''
   title: sturdy thick stick
   caption: ''
   tags: []
+  extras:
+    compendium: 399
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-t5PVjdg/0/X4/i-t5PVjdg-X4.jpg
   alt: ''
   title: wooden mop
   caption: ''
   tags: []
+  extras:
+    compendium: 407
+    icon: stable
 - src: https://photos.smugmug.com/photos/i-pKMtGMm/0/X4/i-pKMtGMm-X4.jpg
   alt: ''
   title: travler's spear
   caption: lookout landing
   tags: []
+  extras:
+    compendium: 412
+    icon: surface # TODO: lookout landing icon
 - src: https://photos.smugmug.com/photos/i-hmzSzKv/0/X4/i-hmzSzKv-X4.jpg
   alt: ''
   title: soldier's spear
   caption: lookout landing
   tags: []
+  extras:
+    compendium: 414
+    icon: surface # TODO: lookout landing icon
 - src: https://photos.smugmug.com/photos/i-FPDL228/0/X4/i-FPDL228-X4.jpg
   alt: ''
   title: knight's halberd
   caption: lookout landing
   tags: []
+  extras:
+    compendium: 416
+    icon: surface # TODO: lookout landing icon
 - src: https://photos.smugmug.com/photos/i-L7NdWCx/0/X4/i-L7NdWCx-X4.jpg
   alt: ''
   title: long stick
-  caption: ''
+  caption: lookout landing
   tags: []
+  extras:
+    compendium: 432
+    icon: surface # TODO: lookout landing icon
 - src: https://photos.smugmug.com/photos/i-8Pw7JCT/0/X4/i-8Pw7JCT-X4.jpg
   alt: ''
   title: construct bow
   caption: ''
   tags: []
+  extras:
+    compendium: 466
+    icon: shrine_incomplete
 - src: https://photos.smugmug.com/photos/i-N4Bvdj4/0/X4/i-N4Bvdj4-X4.jpg
   alt: ''
   title: ''

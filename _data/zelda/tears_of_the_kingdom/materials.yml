@@ -4,103 +4,165 @@
   title: hylian tomato
   caption: and a hylian retriever
   tags: []
+  extras:
+    compendium: 207
+    icon: stable
 - src: https://photos.smugmug.com/photos/i-Tb7N875/0/X4/i-Tb7N875-X4.jpg
   alt: ''
   title: spicy pepper
   caption: ''
   tags: []
+  extras:
+    compendium: 209
+    icon: cold
 - src: https://photos.smugmug.com/photos/i-bpn4Zv2/0/X4/i-bpn4Zv2-X4.jpg
   alt: ''
   title: fire fruit
   caption: ''
   tags: []
+  extras:
+    compendium: 213
 - src: https://photos.smugmug.com/photos/i-Qhrt2g3/0/X4/i-Qhrt2g3-X4.jpg
   alt: ''
   title: ice fruit
   caption: forgotten temple
   tags: []
+  extras:
+    compendium: 214
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-TGbxbBP/0/X4/i-TGbxbBP-X4.jpg
   alt: ''
   title: dazzlefruit
   caption: ''
   tags: []
+  extras:
+    compendium: 217
+    icon: sky
 - src: https://photos.smugmug.com/photos/i-3d3btjM/0/X4/i-3d3btjM-X4.jpg
   alt: ''
-  title: hyrule shroom
+  title: hylian shroom
   caption: ''
   tags: []
+  extras:
+    compendium: 218
+    icon: heart
 - src: https://photos.smugmug.com/photos/i-cM8r6zf/0/X4/i-cM8r6zf-X4.jpg
   alt: ''
   title: hearty truffle
   caption: ''
   tags: []
+  extras:
+    compendium: 222
+    icon: heart_extra
 - src: https://photos.smugmug.com/photos/i-tCdZmZz/0/X4/i-tCdZmZz-X4.jpg
   alt: ''
   title: ironshroom
   caption: ''
   tags: []
+  extras:
+    compendium: 229
+    icon: defense
 - src: https://photos.smugmug.com/photos/i-MVDh6Ks/0/X4/i-MVDh6Ks-X4.jpg
   alt: ''
   title: silent shroom
   caption: ''
   tags: []
+  extras:
+    compendium: 230
+    icon: stealth
 - src: https://photos.smugmug.com/photos/i-n6xsjk9/0/X4/i-n6xsjk9-X4.jpg
   alt: ''
   title: brightcap
   caption: ''
   tags: []
+  extras:
+    compendium: 231
+    icon: glow
 - src: https://photos.smugmug.com/photos/i-SnGvZp2/0/X4/i-SnGvZp2-X4.jpg
   alt: ''
   title: puffshroom
   caption: ''
   tags: []
+  extras:
+    compendium: 232
+    icon: depths
 - src: https://photos.smugmug.com/photos/i-r6m9gft/0/X4/i-r6m9gft-X4.jpg
   alt: ''
   title: stambulb
   caption: ''
   tags: []
+  extras:
+    compendium: 234
+    icon: stamina
 - src: https://photos.smugmug.com/photos/i-pNg2vFB/0/X4/i-pNg2vFB-X4.jpg
   alt: ''
-  title: swift carrot
+  title: endura carrot
   caption: ''
   tags: []
+  extras:
+    compendium: 241
+    icon: stamina_extra
 - src: https://photos.smugmug.com/photos/i-7mghJsh/0/X4/i-7mghJsh-X4.jpg
   alt: ''
   title: fortified pumpkin
   caption: ''
   tags: []
+  extras:
+    compendium: 242
+    icon: defense
 - src: https://photos.smugmug.com/photos/i-WHP3bd8/0/X4/i-WHP3bd8-X4.jpg
   alt: ''
   title: blue nightshade
   caption: ''
   tags: []
+  extras:
+    compendium: 247
+    icon: stealth
 - src: https://photos.smugmug.com/photos/i-gDM8GbN/0/X4/i-gDM8GbN-X4.jpg
   alt: ''
   title: sundelion
   caption: ''
   tags: []
+  extras:
+    compendium: 248
+    icon: gloom_repair
 - src: https://photos.smugmug.com/photos/i-4ZXpqrb/0/X4/i-4ZXpqrb-X4.jpg
   alt: ''
   title: brightbloom seed
   caption: ''
   tags: []
+  extras:
+    compendium: 249
+    icon: cave
 - src: https://photos.smugmug.com/photos/i-SBzGbLL/0/X4/i-SBzGbLL-X4.jpg
   alt: ''
   title: muddle bud
   caption: ''
   tags: []
+  extras:
+    compendium: 251
+    icon: depths
 - src: https://photos.smugmug.com/photos/i-6tRsVjd/0/X4/i-6tRsVjd-X4.jpg
   alt: ''
   title: bomb flower
   caption: ''
   tags: []
+  extras:
+    compendium: 252
+    icon: depths
 - src: https://photos.smugmug.com/photos/i-kTNTrvq/0/X4/i-kTNTrvq-X4.jpg
   alt: ''
   title: silent princess
   caption: ''
   tags: []
+  extras:
+    compendium: 253
+    icon: stealth
 - src: https://photos.smugmug.com/photos/i-kXJQtFn/0/X4/i-kXJQtFn-X4.jpg
   alt: ''
   title: like like stone
   caption: ''
   tags: []
+  extras:
+    compendium: 265
+    icon: cave

@@ -113,14 +113,27 @@ function updateNavigation(currentImage) {
 const scrollContainer = document.getElementById("scroll-container");
 let currentImage = getCurrentVisibleImage();
 
-window.addEventListener("load", () => {
-  updatePageTitle(currentImage);
-  updateNavigation(currentImage);
-});
-
-scrollContainer.addEventListener("scrollend", () => {
+function updateSlideUI() {
   currentImage = getCurrentVisibleImage();
 
   updatePageTitle(currentImage);
   updateNavigation(currentImage);
+}
+
+window.addEventListener("load", () => {
+  updateSlideUI();
 });
+
+// webkit doesn't support scrollend T_T
+if (currentImage.onscrollend === null) {
+  scrollContainer.addEventListener("scrollend", () => {
+    updateSlideUI();
+  });
+} else {
+  let timer;
+  scrollContainer.addEventListener("scroll", () => {
+    clearTimeout(timer);
+    timer = setTimeout(updateSlideUI, 150);
+  });
+}
+
