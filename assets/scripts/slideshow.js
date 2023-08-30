@@ -42,11 +42,11 @@ function generateIcon(icon) {
 const slideInfo = document.getElementById("slide-info");
 const initialTitle = slideInfo.innerHTML;
 
-function updatePageTitle(currentImage) {
+function updateSlideInfo(currentImage) {
   const title = currentImage.getAttribute("data-title");
   const caption = currentImage.getAttribute("data-caption");
-  const icon = currentImage.getAttribute("data-icon");
   // zelda only
+  const icon = currentImage.getAttribute("data-icon");
   const compendiumEntry = currentImage.getAttribute("data-compendium");
 
   let updatedSlideInfo = [];
@@ -68,12 +68,11 @@ function updatePageTitle(currentImage) {
     updatedSlideInfo.push(titleElement);
   }
 
+  // zelda only
   if (icon) {
     const iconElement = generateIcon(icon);
     updatedSlideInfo.push(iconElement);
   }
-
-  // zelda only
   if (compendiumEntry) {
     const compendiumElement = document.createElement("span");
     compendiumElement.className = "compendium";
@@ -116,7 +115,7 @@ let currentImage = getCurrentVisibleImage();
 function updateSlideUI() {
   currentImage = getCurrentVisibleImage();
 
-  updatePageTitle(currentImage);
+  updateSlideInfo(currentImage);
   updateNavigation(currentImage);
 }
 

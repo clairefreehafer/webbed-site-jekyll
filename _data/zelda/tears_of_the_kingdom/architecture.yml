@@ -1,0 +1,137 @@
+---
+- src: https://photos.smugmug.com/photos/i-p5GgZDZ/0/X4/i-p5GgZDZ-X4.jpg
+  alt: ''
+  title: mipha court
+  caption: ''
+  tags: []
+  extras:
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-ncTCrLg/0/X4/i-ncTCrLg-X4.jpg
+  alt: ''
+  title: mipha court
+  caption: ''
+  tags: []
+  extras:
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-6zJZvJb/0/X4/i-6zJZvJb-X4.jpg
+  alt: ''
+  title: tarrey town
+  caption: ''
+  tags: []
+  extras:
+    icon: surface # TODO: town icon
+- src: https://photos.smugmug.com/photos/i-4KcT79q/0/X4/i-4KcT79q-X4.jpg
+  alt: ''
+  title: gerudo shelter
+  caption: ''
+  tags: []
+- src: https://photos.smugmug.com/photos/i-RgMWh7C/0/X4/i-RgMWh7C-X4.jpg
+  alt: ''
+  title: gerudo shelter
+  caption: ''
+  tags: []
+- src: https://photos.smugmug.com/photos/i-sBFHNMn/0/X4/i-sBFHNMn-X4.jpg
+  alt: ''
+  title: north hyrule sky archipelago
+  caption: ''
+  tags: []
+  extras:
+    icon: sky
+- src: https://photos.smugmug.com/photos/i-tTfcBx6/0/X4/i-tTfcBx6-X4.jpg
+  alt: ''
+  title: gerudo desert
+  caption: ''
+  tags: []
+  extras:
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-zgTjT7M/0/X4/i-zgTjT7M-X4.jpg
+  alt: ''
+  title: gerudo highlands
+  caption: ''
+  tags: []
+  extras:
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-TfWSbV9/0/X4/i-TfWSbV9-X4.jpg
+  alt: ''
+  title: north lomei castle top floor
+  caption: ''
+  tags: []
+  extras:
+    icon: sky
+- src: https://photos.smugmug.com/photos/i-5CDwsNV/0/X4/i-5CDwsNV-X4.jpg
+  alt: ''
+  title: east gerudo sky archipelago
+  caption: ''
+  tags: []
+  extras:
+    icon: sky
+- src: https://photos.smugmug.com/photos/i-gS3BBX6/0/X4/i-gS3BBX6-X4.jpg
+  alt: ''
+  title: hyrule field
+  caption: ''
+  tags: []
+  extras:
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-2bXJ87b/0/X4/i-2bXJ87b-X4.jpg
+  alt: ''
+  title: ancient columns
+  caption: ''
+  tags: []
+  extras:
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-7JVMC5m/0/X4/i-7JVMC5m-X4.jpg
+  alt: ''
+  title: ancient columns
+  caption: ''
+  tags: []
+  extras:
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-nHmJ744/0/X4/i-nHmJ744-X4.jpg
+  alt: ''
+  title: lanayru great spring
+  caption: ''
+  tags: []
+  extras:
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-S5FhWTq/0/X4/i-S5FhWTq-X4.jpg
+  alt: ''
+  title: lurelin village inn
+  caption: ''
+  tags: []
+  extras:
+    icon: surface # TODO: inn icon
+- src: https://photos.smugmug.com/photos/i-5w5f72M/0/X4/i-5w5f72M-X4.jpg
+  alt: ''
+  title: sanidin park ruins
+  caption: ''
+  tags: []
+  extras:
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-ZpPRfS2/0/X4/i-ZpPRfS2-X4.jpg
+  alt: ''
+  title: great sky island
+  caption: ''
+  tags: []
+  extras:
+    icon: sky
+- src: https://photos.smugmug.com/photos/i-c2bmmdC/0/X4/i-c2bmmdC-X4.jpg
+  alt: ''
+  title: great sky island
+  caption: ''
+  tags: []
+  extras:
+    icon: sky
+- src: https://photos.smugmug.com/photos/i-ScqhMxd/0/X4/i-ScqhMxd-X4.jpg
+  alt: ''
+  title: great sky island
+  caption: ''
+  tags: []
+  extras:
+    icon: sky
+- src: https://photos.smugmug.com/photos/i-73n6BgF/0/X4/i-73n6BgF-X4.jpg
+  alt: ''
+  title: gerudo highlands skyview tower
+  caption: ''
+  tags: []
+  extras:
+    icon: tower
