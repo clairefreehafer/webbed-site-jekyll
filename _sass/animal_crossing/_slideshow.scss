@@ -1,174 +1,177 @@
 @import "mixins";
 @import "variables";
 
-body {
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-ol, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.back {
-  @include ui_element;
-  font-size: 1rem;
-  left: 0.5rem;
-  padding: 0.5rem 1rem;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  top: 0.5rem;
-  z-index: 2;
-}
-
-.slideshow {
-  position: relative;
-  max-width: 100vw;
-  height: 100vh;
-}
-
-.slideshow-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-.slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  counter-increment: slides;
-  flex-direction: column;
-}
-
-.slide-info {
-  @include ui_element;
-  display: flex;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  position: absolute;
-  right: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  top: 0.5rem;
-  z-index: 2;
-}
-
-.slide-info[open] {
-  padding: 1rem 2rem;
-}
-
-.slide-info > summary {
-  text-align: right;
-}
-
-.slide-snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
-  z-index: -1;
-}
-
-.photo {
-  width: calc(100% - 2 * $photo_border_width);
-  margin: $photo_border_width;
-  object-fit: contain;
-}
-
-.photo-border {
-  background: rgba(255, 255, 255, 1);
-  box-shadow: inset 0 0 0.25rem 0.1rem rgba(0, 0, 0, 0.3),
-              0 0 1.5rem 0.1rem rgba(0, 0, 0, 0.3);
-  place-self: center;
-  position: relative;
-  display: flex;
-  max-width: 1280px;
-  margin: 5%;
-}
-
-.photo-border.hide-border {
-  padding: 0;
-}
-
-.hide-border > .photo {
-  margin: 0;
-  width: 100%;
-}
-
-.photo-inset-shadow-helper {
-  box-sizing: border-box;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  top: 0;
-  padding: $photo_border_width 0;
-}
-
-.photo-inset-shadow-helper.hide-border {
-  display: none;
-}
-
-.photo-inset-shadow {
-  border-radius: 1%;
-  box-shadow: inset 0 0 0.25rem 0.1rem rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 100%;
-  margin: 0 $photo_border_width;
-  max-width: calc(100% - 2 * $photo_border_width);
-}
-
-.photo-date {
-  font-family: "Digital Display", sans-serif;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: calc(1.5 * $photo_border_width) calc(2 * $photo_border_width);
-  font-size: 5vw;
-  color: orange;
-  text-shadow: 0 0 3px orange,
-  0 0 5px orangered, 0 0 10px orangered;
-  opacity: 0.9;
-  display: none;
-
-  &.show-date {
-    display: block;
+// TODO: might not need this
+html[data-theme='animal_crossing'] {
+  body {
+    padding: 0;
   }
-}
 
-.hide-border > .photo-date {
-  margin: calc($photo_border_width + 0.5rem);
-}
+  a {
+    text-decoration: none;
+  }
 
-.slide-navigation {
-  @include ui_element;
-  bottom: 0.5rem;
-  font-size: 1.5rem;
-  left: 50%;
-  padding: 0.5rem 1.5rem;
-  position: absolute;
-  text-decoration: none;
-  transform: translateX(-50%);
-  white-space: nowrap;
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .back {
+    @include ui_element;
+    font-size: 1rem;
+    left: 0.5rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 0.5rem;
+    z-index: 2;
+  }
+
+  .slideshow {
+    position: relative;
+    max-width: 100vw;
+    height: 100vh;
+  }
+
+  .slideshow-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    counter-increment: slides;
+    flex-direction: column;
+  }
+
+  .slide-info {
+    @include ui_element;
+    display: flex;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    top: 0.5rem;
+    z-index: 2;
+  }
+
+  .slide-info[open] {
+    padding: 1rem 2rem;
+  }
+
+  .slide-info > summary {
+    text-align: right;
+  }
+
+  .slide-snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    z-index: -1;
+  }
+
+  .photo {
+    width: calc(100% - 2 * $photo_border_width);
+    margin: $photo_border_width;
+    object-fit: contain;
+  }
+
+  .photo-border {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: inset 0 0 0.25rem 0.1rem rgba(0, 0, 0, 0.3),
+                0 0 1.5rem 0.1rem rgba(0, 0, 0, 0.3);
+    place-self: center;
+    position: relative;
+    display: flex;
+    max-width: 1280px;
+    margin: 5%;
+  }
+
+  .photo-border.hide-border {
+    padding: 0;
+  }
+
+  .hide-border > .photo {
+    margin: 0;
+    width: 100%;
+  }
+
+  .photo-inset-shadow-helper {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    padding: $photo_border_width 0;
+  }
+
+  .photo-inset-shadow-helper.hide-border {
+    display: none;
+  }
+
+  .photo-inset-shadow {
+    border-radius: 1%;
+    box-shadow: inset 0 0 0.25rem 0.1rem rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    margin: 0 $photo_border_width;
+    max-width: calc(100% - 2 * $photo_border_width);
+  }
+
+  .photo-date {
+    font-family: "Digital Display", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: calc(1.5 * $photo_border_width) calc(2 * $photo_border_width);
+    font-size: 5vw;
+    color: orange;
+    text-shadow: 0 0 3px orange,
+    0 0 5px orangered, 0 0 10px orangered;
+    opacity: 0.9;
+    display: none;
+
+    &.show-date {
+      display: block;
+    }
+  }
+
+  .hide-border > .photo-date {
+    margin: calc($photo_border_width + 0.5rem);
+  }
+
+  .slide-navigation {
+    @include ui_element;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    left: 50%;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    text-decoration: none;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
 }
