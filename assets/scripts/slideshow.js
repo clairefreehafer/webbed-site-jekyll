@@ -23,10 +23,26 @@ function getCurrentVisibleImage() {
 
 const iconTitleMapping = {
   cave: "this photo was taken in a cave.",
+  cold: "the subject of this photo boosts cold tolerance.",
+  defense: "the subject of this photo can boost defense.",
   depths: "this photo was taken in the depths.",
+  gloom_repair: "the subject of this photo will restore hearts lost to gloom.",
+  glow: "the subject of this photo can make you glow.",
+  heart_extra: "the subject of this photo can provide extra hearts.",
+  heart: "the subject of this photo can restore hearts.",
+  heat: "the subject of this photo can boost heat tolerance.",
+  inn: "this photo was taken at an inn.",
+  shrine_incomplete: "this photo was taken in a shrine.",
   sky: "this photo was taken on a sky island.",
+  slip: "the subject of this photo can reduce surface slipperiness.",
   stable: "this photo was taken at a stable.",
+  stamina_extra: "the subject of this photo can provide extra stamina.",
+  stamina: "the subject of this photo can restore stamina.",
+  stealth: "the subject of this photo can increase stealth.",
   surface: "this photo was taken on the surface.",
+  swim_speed: "the subject of this photo will increase swim speed",
+  tower: "this photo was taken at a skyview tower.",
+  village: "this photo was taken in a village."
 };
 
 function generateIcon(icon) {

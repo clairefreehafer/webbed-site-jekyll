@@ -1,0 +1,40 @@
+---
+- src: https://photos.smugmug.com/photos/i-fg3drHk/0/X4/i-fg3drHk-X4.jpg
+  alt: ''
+  title: ''
+  caption: ''
+  tags: []
+  extras:
+    icon: depths
+- src: https://photos.smugmug.com/photos/i-KxZkjn2/0/X4/i-KxZkjn2-X4.jpg
+  alt: ''
+  title: moblin horn
+  caption: ''
+  tags:
+  - black and white
+  extras:
+    compendium: 279
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-hb6SdxP/0/X4/i-hb6SdxP-X4.jpg
+  alt: ''
+  title: boko bow
+  caption: ''
+  tags: []
+  extras:
+    compendium: 456
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-pGKLKZ4/0/X4/i-pGKLKZ4-X4.jpg
+  alt: ''
+  title: boomerang
+  caption: ''
+  tags: []
+  extras:
+    compendium: 333
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-2FbR3Nn/0/X4/i-2FbR3Nn-X4.jpg
+  alt: ''
+  title: ''
+  caption: ''
+  tags: []
+  extras:
+    icon: sky

@@ -39,13 +39,21 @@
   extras:
     compendium: 106
     icon: surface
-- src: https://photos.smugmug.com/photos/i-pT8rn6r/0/X4/i-pT8rn6r-X4.jpg
+- src: https://photos.smugmug.com/photos/i-sfjwTFD/0/X4/i-sfjwTFD-X4.jpg
   alt: ''
   title: shock like
   caption: ''
   tags: []
   extras:
     compendium: 115
+    icon: cave
+- src: https://photos.smugmug.com/photos/i-mqPRgFn/0/X4/i-mqPRgFn-X4.jpg
+  alt: ''
+  title: rock like
+  caption: ''
+  tags: []
+  extras:
+    compendium: 116
     icon: cave
 - src: https://photos.smugmug.com/photos/i-kQ4dFcm/0/X4/i-kQ4dFcm-X4.jpg
   alt: ''
@@ -55,6 +63,14 @@
   extras:
     compendium: 117
     icon: surface
+- src: https://photos.smugmug.com/photos/i-KZbnMMr/0/X4/i-KZbnMMr-X4.jpg
+  alt: ''
+  title: black bokoblin
+  caption: ''
+  tags: []
+  extras:
+    compendium: 123
+    icon: depths
 - src: https://photos.smugmug.com/photos/i-6CttSHr/0/X4/i-6CttSHr-X4.jpg
   alt: ''
   title: stalkoblin
@@ -63,6 +79,14 @@
   extras:
     compendium: 124
     icon: depths
+- src: https://photos.smugmug.com/photos/i-qRZNb4p/0/X4/i-qRZNb4p-X4.jpg
+  alt: ''
+  title: blue horriblin
+  caption: ''
+  tags: []
+  extras:
+    compendium: 143
+    icon: cave
 - src: https://photos.smugmug.com/photos/i-pQVhVgs/0/X4/i-pQVhVgs-X4.jpg
   alt: ''
   title: blue horriblin
@@ -71,6 +95,14 @@
   extras:
     compendium: 144
     icon: cave
+- src: https://photos.smugmug.com/photos/i-pJzQKgT/0/X4/i-pJzQKgT-X4.jpg
+  alt: ''
+  title: captain construct I
+  caption: ''
+  tags: []
+  extras:
+    compendium: 155
+    icon: surface
 - src: https://photos.smugmug.com/photos/i-dLZ9Fnn/0/X4/i-dLZ9Fnn-X4.jpg
   alt: ''
   title: master kohga
@@ -103,3 +135,27 @@
   extras:
     compendium: 184
     icon: depths
+- src: https://photos.smugmug.com/photos/i-6C7QW85/0/X4/i-6C7QW85-X4.jpg
+  alt: ''
+  title: farosh
+  caption: ''
+  tags: []
+  extras:
+    compendium: 190
+    icon: surface
+- src: https://photos.smugmug.com/photos/i-tkgw8Hb/0/X4/i-tkgw8Hb-X4.jpg
+  alt: ''
+  title: yiga footsoldier
+  caption: ''
+  tags: []
+  extras:
+    compendium: 163
+    icon: depths
+- src: https://photos.smugmug.com/photos/i-tgcCFtc/0/X4/i-tgcCFtc-X4.jpg
+  alt: ''
+  title: phantom ganon
+  caption: ''
+  tags: []
+  extras:
+    compendium: 198
+    icon: surface

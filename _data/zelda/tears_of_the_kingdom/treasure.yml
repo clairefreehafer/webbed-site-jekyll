@@ -15,6 +15,14 @@
   extras:
     compendium: 505
     icon: cave
+- src: https://photos.smugmug.com/photos/i-J8tcpTh/0/X4/i-J8tcpTh-X4.jpg
+  alt: ''
+  title: rare ore deposit
+  caption: ''
+  tags: []
+  extras:
+    compendium: 506
+    icon: cave
 - src: https://photos.smugmug.com/photos/i-7g2P7Jc/0/X4/i-7g2P7Jc-X4.jpg
   alt: ''
   title: luminous stone deposit
@@ -23,6 +31,14 @@
   extras:
     compendium: 507
     icon: surface
+- src: https://photos.smugmug.com/photos/i-c7C62qH/0/X4/i-c7C62qH-X4.jpg
+  alt: ''
+  title: zonaite deposit
+  caption: ''
+  tags: []
+  extras:
+    compendium: 508
+    icon: depths
 - src: https://photos.smugmug.com/photos/i-bv47twB/0/X4/i-bv47twB-X4.jpg
   alt: ''
   title: well

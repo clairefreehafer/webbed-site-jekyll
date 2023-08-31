@@ -1,4 +1,12 @@
 ---
+- src: https://photos.smugmug.com/photos/i-TK6gj2x/0/X4/i-TK6gj2x-X4.jpg
+  alt: ''
+  title: palm fruit
+  caption: and apples
+  tags: []
+  extras:
+    compendium: 205
+    icon: heart
 - src: https://photos.smugmug.com/photos/i-fZbjKMh/0/X4/i-fZbjKMh-X4.jpg
   alt: ''
   title: hylian tomato
@@ -30,6 +38,14 @@
   extras:
     compendium: 214
     icon: surface
+- src: https://photos.smugmug.com/photos/i-WdZkBQP/0/X4/i-WdZkBQP-X4.jpg
+  alt: ''
+  title: splash fruit
+  caption: ''
+  tags: []
+  extras:
+    compendium: 215
+    icon: swim_speed
 - src: https://photos.smugmug.com/photos/i-TGbxbBP/0/X4/i-TGbxbBP-X4.jpg
   alt: ''
   title: dazzlefruit
@@ -46,6 +62,14 @@
   extras:
     compendium: 218
     icon: heart
+- src: https://photos.smugmug.com/photos/i-n2Pcfvw/0/X4/i-n2Pcfvw-X4.jpg
+  alt: ''
+  title: endura shroom
+  caption: ''
+  tags: []
+  extras:
+    compendium: 220
+    icon: stamina_extra
 - src: https://photos.smugmug.com/photos/i-cM8r6zf/0/X4/i-cM8r6zf-X4.jpg
   alt: ''
   title: hearty truffle
@@ -94,6 +118,22 @@
   extras:
     compendium: 234
     icon: stamina
+- src: https://photos.smugmug.com/photos/i-MvPPQKb/0/X4/i-MvPPQKb-X4.jpg
+  alt: ''
+  title: cool safflina
+  caption: ''
+  tags: []
+  extras:
+    compendium: 237
+    icon: heat
+- src: https://photos.smugmug.com/photos/i-zWWzcxS/0/X4/i-zWWzcxS-X4.jpg
+  alt: ''
+  title: big hearty radish
+  caption: ''
+  tags: []
+  extras:
+    compendium: 236
+    icon: heart_extra
 - src: https://photos.smugmug.com/photos/i-pNg2vFB/0/X4/i-pNg2vFB-X4.jpg
   alt: ''
   title: endura carrot
@@ -158,6 +198,14 @@
   extras:
     compendium: 253
     icon: stealth
+- src: https://photos.smugmug.com/photos/i-52B2vNH/0/X4/i-52B2vNH-X4.jpg
+  alt: ''
+  title: electric keese eyeball
+  caption: ''
+  tags: []
+  extras:
+    compendium: 264
+    icon: cave
 - src: https://photos.smugmug.com/photos/i-kXJQtFn/0/X4/i-kXJQtFn-X4.jpg
   alt: ''
   title: like like stone

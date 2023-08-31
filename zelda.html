@@ -9,7 +9,10 @@ layout: zelda
   {% for page in site.zelda -%}
     {%- if page.path contains "tears_of_the_kingdom" %}
       <li class="list-item">
-        <img src="/assets/images/page_icons/zelda/{{ page.title }}.svg" class="page-icon" alt=""> <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+        {%- if page.icon -%}
+        <img src="/assets/images/zelda/page_icons/{{ page.icon }}.svg" class="page-icon" alt="">&nbsp;
+        {%- endif -%}
+        <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
       </li>
     {%- endif -%}
   {%- endfor %}
