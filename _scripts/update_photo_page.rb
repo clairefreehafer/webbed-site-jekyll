@@ -55,6 +55,7 @@ if album_key then
   end
 
   for image in images do
+    # TODO: fetch other image versions as well to optimize which one we are sending?
     largest_image_uri = image['Uris']['LargestImage']['Uri']
 
     image_url = Smugmug.fetch("#{Smugmug::API_HOST}#{largest_image_uri}?APIKey=#{Smugmug::API_KEY}")['Response']['LargestImage']['Url']

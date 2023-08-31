@@ -2,6 +2,7 @@
 
 // element mocking the look of dialogue boxes
 @mixin text-background {
+  backdrop-filter: blur(3px);
   background-color: $ui_background_color;
   border-radius: $ui_border_radius;
   box-shadow: $ui_box_shadow;

@@ -23,32 +23,38 @@ function getCurrentVisibleImage() {
 
 const iconTitleMapping = {
   cave: "this photo was taken in a cave.",
+  chasm: "this photo was taken at a chasm",
   cold: "the subject of this photo boosts cold tolerance.",
   defense: "the subject of this photo can boost defense.",
   depths: "this photo was taken in the depths.",
-  gloom_repair: "the subject of this photo will restore hearts lost to gloom.",
+  fire: "the subject of this photo can provide fire resistance.",
+  gloom_repair: "the subject of this photo can restore hearts lost to gloom.",
   glow: "the subject of this photo can make you glow.",
   heart_extra: "the subject of this photo can provide extra hearts.",
   heart: "the subject of this photo can restore hearts.",
   heat: "the subject of this photo can boost heat tolerance.",
   inn: "this photo was taken at an inn.",
   shrine_incomplete: "this photo was taken in a shrine.",
+  shrine: "this photo was taken at a shrine",
   sky: "this photo was taken on a sky island.",
   slip: "the subject of this photo can reduce surface slipperiness.",
+  speed: "the subject of ths photo can increase movement speed.",
   stable: "this photo was taken at a stable.",
   stamina_extra: "the subject of this photo can provide extra stamina.",
   stamina: "the subject of this photo can restore stamina.",
   stealth: "the subject of this photo can increase stealth.",
   surface: "this photo was taken on the surface.",
-  swim_speed: "the subject of this photo will increase swim speed",
+  swim_speed: "the subject of this photo can increase swim speed",
+  tech_lab: "this photo was taken at a tech lab.",
   tower: "this photo was taken at a skyview tower.",
-  village: "this photo was taken in a village."
+  village: "this photo was taken in a village.",
+  well: "this photo was taken at a well.",
 };
 
 function generateIcon(icon) {
   const iconElement = document.createElement("img");
   iconElement.src = `/assets/images/zelda/image_icons/${icon}.svg`;
-  iconElement.alt = iconTitleMapping[icon];
+  iconElement.alt = iconTitleMapping[icon] || "";
   iconElement.title = iconTitleMapping[icon];
   iconElement.className = "image-icon";
 
