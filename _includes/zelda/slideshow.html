@@ -2,23 +2,11 @@
 
 <ol class="slideshow-wrapper" id="scroll-container">
   {%- for image in images -%}
-    {%- capture hide_border -%}
-      {%- if image.extras.has_border -%}
-        hide-border
-      {%- endif -%}
-    {%- endcapture -%}
-
-    {%- capture show_date -%}
-      {%- if image.extras.show_date -%}
-        show-date
-      {%- endif -%}
-    {%- endcapture -%}
-
     {%- assign current_slide = forloop.index -%}
 
     <li class="slide" id="slide-{{ forloop.index }}">
       <div class="slide-snapper"></div>
-      <div class="photo-border {{ hide_border }}">
+      <div class="photo-border">
         <img src="/assets/images/zelda/ripples.png" alt="" class="photo-texture" />
         <img
           src="{{ image.src }}"
@@ -31,7 +19,7 @@
           data-compendium="{{ image.extras.compendium }}"
           data-icon="{{ image.extras.icon }}"
         />
-        <div class="photo-inset-shadow-helper {{ hide_border }}">
+        <div class="photo-inset-shadow-helper">
           <div class="photo-inset-shadow"></div>
         </div>
         <img src="/assets/images/zelda/ripples.png" alt="" class="photo-texture" />

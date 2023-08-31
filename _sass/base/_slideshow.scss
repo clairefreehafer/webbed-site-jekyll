@@ -127,22 +127,6 @@ a {
   z-index: $texture-z-index;
 }
 
-.hide-border {
-  &.photo-border {
-    padding: 0;
-  }
-
-  & > .photo {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  &.photo-inset-shadow-helper {
-    display: none;
-  }
-}
-
 .slide-navigation {
   bottom: 0.5rem;
   font-size: 1.5rem;

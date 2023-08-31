@@ -1,7 +1,7 @@
 @import "variables";
 
 // element mocking the look of dialogue boxes
-@mixin ui_element {
+@mixin text-background {
   background-color: $ui_background_color;
   border-radius: $ui_border_radius;
   box-shadow: $ui_box_shadow;
