@@ -10,13 +10,19 @@ metadata = File.open(metadata_location) { |f| Nokogiri::XML::parse(f) }
 rdfDescription = metadata.root.elements.first.elements.first
 
 tags = []
+title = nil
 
 rdfDescription.elements.each do |node|
   if node.name == "subject"
     node.elements.first.elements.each do |tag_node|
       tags.push(tag_node.text)
     end
+  elsif node.name == "title"
+    node.elements.first.elements.each do |title_node|
+      title = title_node.text
+    end
   end
 end
 
+puts title
 puts tags
