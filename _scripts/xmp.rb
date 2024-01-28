@@ -11,6 +11,7 @@ rdfDescription = metadata.root.elements.first.elements.first
 
 tags = []
 title = nil
+caption = nil
 
 rdfDescription.elements.each do |node|
   if node.name == "subject"
@@ -18,11 +19,12 @@ rdfDescription.elements.each do |node|
       tags.push(tag_node.text)
     end
   elsif node.name == "title"
-    node.elements.first.elements.each do |title_node|
-      title = title_node.text
-    end
+    title = node.elements.first.elements.first.text
+  elsif node.name == "UserComment"
+    caption = node.elements.first.elements.first.text
   end
 end
 
 puts title
+puts caption
 puts tags
