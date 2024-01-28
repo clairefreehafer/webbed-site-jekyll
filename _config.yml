@@ -33,6 +33,8 @@ collections:
     output: true
   photography:
     output: true
+  hordes:
+    output: true
   zelda:
     output: true
     order:
