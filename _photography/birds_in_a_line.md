@@ -1,4 +1,5 @@
 ---
+hide: true
 title: birds in a line
 layout: slideshow
 images:
