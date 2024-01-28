@@ -5,7 +5,7 @@ body {
   background-attachment: scroll;
   background-repeat: repeat;
   background-position: left calc(50% - 128px) top calc(80px + 6.5rem);
-  font-family: "FOT Seurat Pro B", Helvetica, Ariel, sans-serif;
+  font-family: "FOT Seurat Pro B", Helvetica, Arial, sans-serif;
   font-weight: 200;
 }
 
@@ -52,9 +52,14 @@ body {
   height: 4rem;
 }
 
+.default_nav-links {
+  background: none;
+}
+
 .page-link {
   display: flex;
   align-items: center;
+  padding: 0 0.5rem;
 }
 
 .page-icon {
@@ -63,22 +68,27 @@ body {
 }
 
 @media (max-width: 600px) {
-  input:checked ~ .nav-links {
+  input:checked ~ .default_nav-links {
     @include text-background;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;;
     left: 50%;
     padding: 1rem;
-    top: calc(50px + 9rem);
+    top: 5rem;
     transform: translateX(-50%);
     width: fit-content;
     z-index: 10;
+    border: none;
   }
 
   .page-link a {
     display: inline-block;
     white-space: nowrap;
+  }
+
+  .menu-icon {
+    margin: 0;
   }
 }
 

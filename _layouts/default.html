@@ -4,14 +4,15 @@
   {%- include head.html -%}
 
   <body>
+    <div class="default_page">
+      {%- include header.html -%}
 
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+      <main class="default_main" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+    </div>
   </body>
 
 </html>

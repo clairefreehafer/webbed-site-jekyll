@@ -1,8 +1,3 @@
-.site-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
 
 .menu-icon {
   display: none;
@@ -12,15 +7,12 @@
   display: none;
 }
 
-.nav-links {
+.default_nav-links {
+  background-color: white;
   display: flex;
 }
 
-.page-link {
-  margin-right: 1rem;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -30,22 +22,24 @@
   .menu-icon {
     display: block;
     cursor: pointer;
+    margin-right: 0.5rem;
   }
 
-  input ~ .nav-links {
+  input ~ .default_nav-links {
     clear: both;
     display: none;
   }
 
-  input:checked ~ .nav-links {
+  input:checked ~ .default_nav-links {
     display: block;
     position: absolute;
-    right: 1rem;
-    top: 30px;
+    right: 1.5rem;
+    top: 60px;
     padding-bottom: 5px;
   }
 
-  .nav-links {
+  .default_nav-links {
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
   }
