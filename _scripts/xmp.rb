@@ -1,12 +1,22 @@
 require "nokogiri"
 
-metadata = File.open("./20140112_140131.jpg.xmp") { |f| Nokogiri::XML::parse(f) }
+# TODO: any easier way to do this?
+file = ARGV[0]
+metadata_location = "/Volumes/Freehafer 2/My Stuff/Raw/#{file}.xmp"
+
+metadata = File.open(metadata_location) { |f| Nokogiri::XML::parse(f) }
 
 # TODO: figure out how to get .search working T_T
 rdfDescription = metadata.root.elements.first.elements.first
 
+tags = []
+
 rdfDescription.elements.each do |node|
   if node.name == "subject"
-    puts node.elements.first.elements.first.text
+    node.elements.first.elements.each do |tag_node|
+      tags.push(tag_node.text)
+    end
   end
 end
+
+puts tags
