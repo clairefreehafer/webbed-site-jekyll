@@ -6,6 +6,9 @@ require 'yaml'
 module Smugmug
   API_HOST = 'https://api.smugmug.com'
   API_KEY = YAML.load_file('./_creds.yml')['SMUGMUG_API_KEY']
+  TITLE = "Title"
+  CAPTION = "Caption"
+  TAGS = "KeywordArray"
 
   def Smugmug.generate_api_url(key, type, uri)
     if uri then

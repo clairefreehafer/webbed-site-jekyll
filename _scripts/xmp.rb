@@ -1,30 +1,29 @@
 require "nokogiri"
+require_relative "smugmug"
 
-# TODO: any easier way to do this?
-file = ARGV[0]
-metadata_location = "/Volumes/Freehafer 2/My Stuff/Raw/#{file}.xmp"
+module XMP
+  def XMP.get_xmp_metadata(path)
+    metadata_location = "/Volumes/Freehafer 2/My Stuff/Raw/#{path}.xmp"
+    metadata = File.open(metadata_location) { |f| Nokogiri::XML::parse(f) }
 
-metadata = File.open(metadata_location) { |f| Nokogiri::XML::parse(f) }
+    # TODO: figure out how to get .search working T_T
+    rdfDescription = metadata.root.elements.first.elements.first
 
-# TODO: figure out how to get .search working T_T
-rdfDescription = metadata.root.elements.first.elements.first
+    parsed_metadata = {}
 
-tags = []
-title = nil
-caption = nil
-
-rdfDescription.elements.each do |node|
-  if node.name == "subject"
-    node.elements.first.elements.each do |tag_node|
-      tags.push(tag_node.text)
+    rdfDescription.elements.each do |node|
+      if node.name == "subject" # tags
+        parsed_metadata[Smugmug::TAGS] = []
+        node.elements.first.elements.each do |tag_node|
+          parsed_metadata[Smugmug::TAGS].push(tag_node.text)
+        end
+      elsif node.name == "title"
+        parsed_metadata[Smugmug::TITLE] = node.elements.first.elements.first.text
+      elsif node.name == "UserComment"
+        parsed_metadata[Smugmug::CAPTION] = node.elements.first.elements.first.text
+      end
     end
-  elsif node.name == "title"
-    title = node.elements.first.elements.first.text
-  elsif node.name == "UserComment"
-    caption = node.elements.first.elements.first.text
+
+    return parsed_metadata
   end
 end
-
-puts title
-puts caption
-puts tags
