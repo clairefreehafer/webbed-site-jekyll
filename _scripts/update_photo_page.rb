@@ -46,17 +46,19 @@ end
 page_config = YAML.load_file("./_#{file_path}.md", permitted_classes: [Date, Time])
 output_array = [];
 album_key = page_config["album_key"]
+missing_alt = 0
+missing_path = 0
 
 if album_key then
   images = Smugmug.get(Smugmug.generate_api_url(album_key, "album", "images"))["Response"]["AlbumImage"]
 
   if not images
-    puts "❌ no images found for #{file_path}"
+    puts "❌ no images retrieved for #{file_path}"
     exit
   end
 
   for image in images do
-    # TODO: fetch other image versions as well to optimize which one we are rendering?
+    # TODO: fetch other image versions as well to optimize which one we are rendering
     largest_image_uri = image["Uris"]["LargestImage"]["Uri"]
 
     image_url = Smugmug.get("#{Smugmug::API_HOST}#{largest_image_uri}?APIKey=#{Smugmug::API_KEY}")["Response"]["LargestImage"]["Url"]
@@ -66,10 +68,13 @@ if album_key then
       existing_data = data.find { |img_data| img_data["src"] == image_url }
     end
 
-    # if alt-text already exists, grab it.
+    # grab existing values so we don't overwrite them.
     alt = (existing_data and existing_data["alt"]) ? existing_data["alt"] : ""
-    # if path already exists, grab it
     path = (existing_data and existing_data["path"]) ? existing_data["path"] : ""
+
+    if alt.length == 0 then
+      missing_alt = missing_alt + 1
+    end
 
     # check if we have the path identified to potentially update metadata.
     if path.length > 0 then
@@ -86,11 +91,12 @@ if album_key then
 
       if not metadata_to_update.empty?() then
         puts "➡️  updating #{metadata_to_update.keys} on smugmug for #{path}..."
-        # TODO: smugmug api call to update metadata
         Smugmug.patch(image["ImageKey"], metadata_to_update)
       else
         puts "➡️  no xmp metadata to update, skipping..."
       end
+    else
+      missing_path = missing_path + 1
     end
 
     data_to_save = {
@@ -127,10 +133,18 @@ else
   exit
 end
 
+if missing_path > 0 then
+  puts "❗️ #{missing_path} images are missing a path."
+end
+
+if missing_alt > 0 then
+  puts "❗️ #{missing_alt} images are missing alt text."
+end
+
 if output_array.length > 0 then
   output_yaml = output_array.to_yaml
   # remove quotes around dates x_x
-  output_yaml = output_yaml.gsub(/(?<!")"(?=[\d\-:\s ]+)/, "")
+  output_yaml = output_yaml.gsub(/(?<!')'(?=[\d\-:\s ]+)/, "")
 
   File.write("./_data/#{file_path}.yml", output_yaml)
 

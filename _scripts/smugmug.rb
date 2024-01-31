@@ -12,6 +12,7 @@ module Smugmug
   API_KEY_SECRET = creds["SMUGMUG_API_KEY_SECRET"]
   ACCESS_TOKEN = creds["SMUGMUG_ACCESS_TOKEN"]
   ACCESS_TOKEN_SECRET = creds["SMUGMUG_ACCESS_TOKEN_SECRET"]
+  # keys smugmug uses for these metadata values
   TITLE = "Title"
   CAPTION = "Caption"
   TAGS = "KeywordArray"
