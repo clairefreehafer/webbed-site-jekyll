@@ -1,5 +1,7 @@
-{%- if page.images -%}
-  {%- for image in page.images -%}
+{%- assign images = site.data.photography[page.slug] -%}
+
+{%- if images -%}
+  {%- for image in images -%}
     {%- if image.src -%}
       <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
     {%- endif -%}

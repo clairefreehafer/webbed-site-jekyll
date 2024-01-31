@@ -16,5 +16,7 @@
     {%- include animal_crossing/head.html -%}
   {%- elsif page.path contains "zelda" -%}
     <link rel="stylesheet" href="{{ "/assets/styles/zelda.css" | relative_url }}">
+  {%- elsif page.path contains "photography" -%}
+    {%- include photography/head.html -%}
   {%- endif -%}
 </head>

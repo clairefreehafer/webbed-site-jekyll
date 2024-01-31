@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <main class="photo-grid-wrapper">
+      <div class="photo-grid">
+        {%- if page.path contains "animal_crossing" -%}
+          {%- include animal_crossing/grid.html -%}
+        {%- else -%}
+          {%- include photography/grid.html -%}
+        {%- endif -%}
+      </div>
+    </main>
+  </body>
+
+</html>

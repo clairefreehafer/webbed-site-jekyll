@@ -63,6 +63,8 @@ if album_key then
 
     image_url = Smugmug.get("#{Smugmug::API_HOST}#{largest_image_uri}?APIKey=#{Smugmug::API_KEY}")["Response"]["LargestImage"]["Url"]
 
+    # TODO: grab `OriginalHeight` and `OriginalWidth` to calculate aspect ratio, to keep layout from shifting as images load.
+
     # if we have a pre-existing data file, then find the matching entry for the current image
     if data then
       existing_data = data.find { |img_data| img_data["src"] == image_url }
