@@ -48,7 +48,7 @@ output_array = [];
 album_key = page_config["album_key"]
 
 if album_key then
-  images = Smugmug.fetch(Smugmug.generate_api_url(album_key, "album", "images"))["Response"]["AlbumImage"]
+  images = Smugmug.get(Smugmug.generate_api_url(album_key, "album", "images"))["Response"]["AlbumImage"]
 
   if not images
     puts "❌ no images found for #{file_path}"
@@ -59,7 +59,7 @@ if album_key then
     # TODO: fetch other image versions as well to optimize which one we are rendering?
     largest_image_uri = image["Uris"]["LargestImage"]["Uri"]
 
-    image_url = Smugmug.fetch("#{Smugmug::API_HOST}#{largest_image_uri}?APIKey=#{Smugmug::API_KEY}")["Response"]["LargestImage"]["Url"]
+    image_url = Smugmug.get("#{Smugmug::API_HOST}#{largest_image_uri}?APIKey=#{Smugmug::API_KEY}")["Response"]["LargestImage"]["Url"]
 
     # if we have a pre-existing data file, then find the matching entry for the current image
     if data then
@@ -72,7 +72,7 @@ if album_key then
     path = (existing_data and existing_data["path"]) ? existing_data["path"] : ""
 
     # check if we have the path identified to potentially update metadata.
-    if path then
+    if path.length > 0 then
       xmp_metadata = XMP.get_xmp_metadata(path)
       metadata_to_update = {}
 
@@ -85,14 +85,18 @@ if album_key then
       end
 
       if not metadata_to_update.empty?() then
-        puts "➡️ updating metadata on smugmug..."
+        puts "➡️  updating #{metadata_to_update.keys} on smugmug for #{path}..."
         # TODO: smugmug api call to update metadata
+        Smugmug.patch(image["ImageKey"], metadata_to_update)
+      else
+        puts "➡️  no xmp metadata to update, skipping..."
       end
     end
 
     data_to_save = {
       "src" => image_url,
       "alt" => alt,
+      "path" => path,
       "title" => image[Smugmug::TITLE],
       "caption" => image[Smugmug::CAPTION],
       "tags" => image[Smugmug::TAGS]
