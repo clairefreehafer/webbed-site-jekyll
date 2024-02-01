@@ -1,1 +1,8 @@
 <link rel="stylesheet" href="{{ "/assets/styles/photography.css" | relative_url }}" >
+
+<!-- TODO: figure out best way to store custom css in yaml -->
+{%- if page.css -%}
+  <style>
+    {{ page.css }}
+  </style>
+{%- endif -%}
