@@ -1,0 +1,21 @@
+@import "../base/variables";
+
+@media screen and (max-width: $menu_breakpoint) {
+  .nav-links {
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  .menu-icon {
+    margin-right: 0.5rem;
+  }
+
+  input:checked ~ .nav-links {
+    right: 1.5rem;
+    top: 60px;
+  }
+
+  .page-link {
+    margin: 0;
+  }
+}

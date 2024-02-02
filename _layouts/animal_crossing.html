@@ -7,12 +7,14 @@ theme: animal_crossing
   {%- include head.html -%}
 
   <body data-theme="animal_crossing">
+    <div class="page">
+      {%- include animal_crossing/header.html -%}
+  
+      <main class="page-content">
+        {{ content }}
+      </main>
+    </div>
 
-    {%- include animal_crossing/header.html -%}
-
-    <main class="page-content">
-      {{ content }}
-    </main>
   </body>
 
 </html>

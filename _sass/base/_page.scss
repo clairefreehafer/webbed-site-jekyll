@@ -1,0 +1,19 @@
+.page {
+  max-width: 750px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-title, .page-link {
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

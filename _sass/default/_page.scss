@@ -1,31 +1,19 @@
-body {
-  // background-color: black;
-}
-
 .page {
   font-family: Garamond, Georgia, Times New Roman, serif;
-  max-width: 750px;
-  margin: auto;
-  padding: 1rem;
 }
 
 .header {
-  align-items: center;
   background-color: white;
   border: 0.5rem solid black;
-  display: flex;
-  justify-content: space-between;
 }
 
 .site-title, .page-link {
   color: black;
-  display: block;
   font-family: Verdana, sans-serif;
   padding: 1rem 0.5rem;
 
   &:hover {
     background-color: yellow;
-    text-decoration: none;
   }
 }
 
