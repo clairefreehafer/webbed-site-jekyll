@@ -52,7 +52,7 @@ body {
   height: 4rem;
 }
 
-.default_nav-links {
+.nav-links {
   background: none;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  input:checked ~ .default_nav-links {
+  input:checked ~ .nav-links {
     @include text-background;
     border-radius: 2rem;
     display: flex;

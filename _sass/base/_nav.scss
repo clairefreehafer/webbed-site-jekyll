@@ -7,7 +7,7 @@
   display: none;
 }
 
-.default_nav-links {
+.nav-links {
   background-color: white;
   display: flex;
 }
@@ -25,12 +25,12 @@
     margin-right: 0.5rem;
   }
 
-  input ~ .default_nav-links {
+  input ~ .nav-links {
     clear: both;
     display: none;
   }
 
-  input:checked ~ .default_nav-links {
+  input:checked ~ .nav-links {
     display: block;
     position: absolute;
     right: 1.5rem;
@@ -38,7 +38,7 @@
     padding-bottom: 5px;
   }
 
-  .default_nav-links {
+  .nav-links {
     border: 1px solid black;
     display: flex;
     flex-direction: column;

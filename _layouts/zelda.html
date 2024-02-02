@@ -10,11 +10,13 @@ theme: zelda
     <img src="/assets/images/zelda/pad-frame-glow.png" class="border-top glow" />
     <img src="/assets/images/zelda/pad-frame.png" class="border-top" />
 
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      {{ content }}
-    </main>
+    <div class="page">
+      {%- include header.html -%}
+  
+      <main class="page-content" aria-label="Content">
+        {{ content }}
+      </main>
+    </div>
 
     <img src="/assets/images/zelda/pad-frame-glow.png" class="border-bottom glow" />
     <img src="/assets/images/zelda/pad-frame.png" class="border-bottom" />
