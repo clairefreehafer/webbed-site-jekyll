@@ -6,3 +6,22 @@
     {{ page.css }}
   </style>
 {%- endif -%}
+
+{%- if page.layout == "grid" -%}
+  {%- capture total_images -%}
+    {%- if page.path contains "photography" -%}
+      {{ site.data.photography[page.slug].size }}
+    {%- else" -%}
+      {{ site.data[section][page.game][page.slug].size }}
+    {%- endif -%}
+  {%- endcapture -%}
+  <style>
+    .photo-grid {
+      grid-template: repeat({{ total_images | divided_by: 2 | at_least: 1 }}, 1fr) / repeat({{ total_images | at_most: 2 }}, 1fr);
+
+      @media screen and (orientation: portrait) {
+        grid-template: repeat({{ total_images }}, 1fr) / 1fr;
+      }
+    }
+  </style>
+{%- endif -%}

@@ -1,6 +1,6 @@
 ---
-hide: true
 title: chasm
-layout: photo_grid
+layout: grid
 album_key: 3ZDGP2
+css: 'body { background-color: black; }'
 ---

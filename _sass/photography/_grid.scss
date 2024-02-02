@@ -1,24 +1,26 @@
-.photo-grid-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+[data-layout=grid] {
+  .photo-grid-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  
+  .photo-grid {
+    display: grid;
+    // TODO: make this work with any number of photos - might need to move it to head.html
+    // grid-template: 1fr / 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  
+    @media screen and (orientation: portrait) {
+      // grid-template: 1fr 1fr / 1fr;
+    }
+  
+    .photo {
+      max-width: 100%;
+    }
+  }
 }
 
-.photo-grid {
-  display: grid;
-  // TODO: make this work with any number of photos - might need to move it to head.html
-  grid-template: 1fr / 1fr 1fr;
-  gap: 1rem;
-  padding: 1rem;
-
-  @media screen and (orientation: portrait) {
-    grid-template: 1fr 1fr / 1fr;
-  }
-
-  .photo {
-    max-width: 100%;
-
-  }
-}
