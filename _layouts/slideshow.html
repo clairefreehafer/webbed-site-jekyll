@@ -6,12 +6,22 @@ script: slideshow
     animal_crossing
   {%- elsif page.path contains "zelda" -%}
     zelda
+  {%- elsif page.path contains "photography" -%}
+    photography
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- capture total_slides -%}
+  {%- if page.path contains "photography" -%}
+    {{ site.data[section][page.slug].size }}
+  {%- else" -%}
+    {{ site.data[section][page.game][page.slug].size }}
   {%- endif -%}
 {%- endcapture -%}
 
 
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}" data-theme="{{ section }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
   {%- include head.html -%}
 
@@ -38,7 +48,7 @@ script: slideshow
         &larr;
       </a>
       &nbsp;
-      <span id="current-slide">1</span> / <span id="total-slides">{{ site.data[section][page.game][page.slug].size }}</span>
+      <span id="current-slide">1</span> / <span id="total-slides">{{ total_slides }}</span>
       &nbsp;
       <a href="#slide-2" class="next-slide" id="next-slide">
         &rarr;

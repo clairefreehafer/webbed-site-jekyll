@@ -1,9 +1,10 @@
-<h1 id="title"></h1>
-<button id="prev">&larr;</button>
-{%- for image in page.images -%}
-  {%- if image.src -%}
-    <img src="{{ image.src }}" alt="{{ image.alt }}" />
-  {%- endif -%}
-{%- endfor -%}
-<button id="next">&rarr;</button>
-<h2 id="slide-count"></h2>
+{%- assign images = site.data.photography[page.slug] -%}
+
+<ol class="slideshow-wrapper" id="scroll-container">
+  {%- for image in images -%}
+    <li class="slide" id="slide-{{ forloop.index }}">
+      <div class="slide-snapper"></div>
+      <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" id="image-{{ forloop.index }}" data-title="{{ image.title }}" data-date="{{ image.date }}" />
+    </li>
+  {%- endfor -%}
+</ol>

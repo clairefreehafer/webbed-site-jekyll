@@ -14,7 +14,7 @@ const images = document.getElementsByClassName("photo");
 function getCurrentVisibleImage() {
   for (const index in images) {
     const image = images[index];
-
+    
     if (isElementInViewport(image)) {
       return image;
     }
