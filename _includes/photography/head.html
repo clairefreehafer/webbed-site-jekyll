@@ -1,12 +1,5 @@
 <link rel="stylesheet" href="{{ "/assets/styles/photography.css" | relative_url }}" >
 
-<!-- TODO: figure out best way to store custom css in yaml -->
-{%- if page.css -%}
-  <style>
-    {{ page.css }}
-  </style>
-{%- endif -%}
-
 {%- if page.layout == "grid" -%}
   {%- capture total_images -%}
     {%- if page.path contains "photography" -%}
@@ -23,5 +16,12 @@
         grid-template: repeat({{ total_images }}, 1fr) / 1fr;
       }
     }
+  </style>
+{%- endif -%}
+
+<!-- TODO: figure out best way to store custom css in yaml -->
+{%- if page.css -%}
+  <style>
+    {{ page.css }}
   </style>
 {%- endif -%}

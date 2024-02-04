@@ -3,7 +3,7 @@
 {%- if images -%}
   {%- for image in images -%}
     {%- if image.src -%}
-      <img src="{{ image.src }}" alt="{{ image.alt }}" class="photo" />
+      <img src="{{ image.src }}" alt="{{ image.alt }}" id="image-{{ forloop.index }}" class="photo" />
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
