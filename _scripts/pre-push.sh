@@ -1,0 +1,2 @@
+printf '#!/bin/sh\nbranch_name=$(git symbolic-ref HEAD 2>/dev/null | cut -d"/" -f 3)\nif [ $branch_name = "main" ]; then\nneocities push _site\nfi' > .git/hooks/pre-push && \
+chmod u+x .git/hooks/pre-push
