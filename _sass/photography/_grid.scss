@@ -34,10 +34,14 @@
 
   dialog {
     align-items: center;
-    display: flex;
+    box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.5);
     flex-direction: column;
     margin: auto;
     padding: 1rem;
+
+    &[open] {
+      display: flex;
+    }
 
     &::backdrop {
       backdrop-filter: blur(3px);

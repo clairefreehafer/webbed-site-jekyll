@@ -3,7 +3,7 @@
 {%- if images -%}
   {%- for image in images -%}
     {%- capture title -%}
-      {%- if image.title -%}
+      {%- if image.title.size > 0 -%}
         {{ image.title }}
       {%- else -%}
         {{ page.title }}
@@ -14,11 +14,21 @@
       <img
         alt="{{ image.alt }}"
         class="photo"
-        data-title="{{ title }}"
-        data-date="{{ image.date }}"
         id="image-{{ forloop.index }}"
         src="{{ image.src }}"
       />
+      <dialog class="info-dialog" id="info-dialog-{{ forloop.index }}">
+        <h1 id="image-title">{{ title }}</h1>
+        <div class="table" id="photo-table">
+          {%- if image.date -%}
+            <div class="row" id="photo-date">
+              <div>date</div>
+              <div>{{ image.date | date: "%B %e, %Y" }}</div>
+            </div>
+          {%- endif -%}
+        </div>
+        <button id="info-close-{{ forloop.index }}" type="button">close</button>
+      </dialog>
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
