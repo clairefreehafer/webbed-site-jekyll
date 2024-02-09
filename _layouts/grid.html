@@ -1,9 +1,16 @@
+---
+script: grid
+---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}" data-layout="grid">
 
   {%- include head.html -%}
 
   <body>
+    {%- include nav-back.html -%}
+    <div class="grid-info" id="grid-info">
+      {{ page.title }}
+    </div>
     <main class="photo-grid-wrapper">
       <div class="photo-grid">
         {%- if page.path contains "animal_crossing" -%}
@@ -13,6 +20,13 @@
         {%- endif -%}
       </div>
     </main>
+    <dialog class="info-dialog" id="info-dialog">
+      <h1 id="image-title">{{ page.title }}</h1>
+      <div class="table" id="photo-table">
+        <div class="row" id="photo-date"></div>
+      </div>
+      <button id="info-close" type="button">close</button>
+    </dialog>
   </body>
 
 </html>

@@ -26,9 +26,7 @@ script: slideshow
   {%- include head.html -%}
 
   <body>
-    <nav class="back">
-      <a href="/{{ page.collection }}.html">back</a>
-    </nav>
+    {%- include nav-back.html -%}
     <div class="slide-info" id="slide-info">
       {{ page.title }}
     </div>

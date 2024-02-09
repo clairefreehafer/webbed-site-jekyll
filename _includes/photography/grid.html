@@ -2,8 +2,23 @@
 
 {%- if images -%}
   {%- for image in images -%}
+    {%- capture title -%}
+      {%- if image.title -%}
+        {{ image.title }}
+      {%- else -%}
+        {{ page.title }}
+      {%- endif -%}
+    {%- endcapture -%}
+
     {%- if image.src -%}
-      <img src="{{ image.src }}" alt="{{ image.alt }}" id="image-{{ forloop.index }}" class="photo" />
+      <img
+        alt="{{ image.alt }}"
+        class="photo"
+        data-title="{{ title }}"
+        data-date="{{ image.date }}"
+        id="image-{{ forloop.index }}"
+        src="{{ image.src }}"
+      />
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}

@@ -1,69 +1,81 @@
-.page {
-  font-family: Garamond, Georgia, Times New Roman, serif;
-}
-
-.header {
-  background-color: white;
-  border: 0.5rem solid black;
-}
-
-.site-title, .page-link {
-  color: black;
-  font-family: Verdana, sans-serif;
-  padding: 1rem 0.5rem;
-
-  &:hover {
-    background-color: yellow;
-  }
-}
-
-h2 {
-  font-family: Verdana, sans-serif;
-  font-size: 2rem;
-  font-weight: 100;
-  margin: 1rem 0;
-  text-transform: uppercase;
-}
-
-.link-grid {
-  border: 1px solid black;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  width: 100%;
-
-  .grid-title {
-    background-color: lightgray;
+[data-theme=default] {
+  a {
     font-family: Verdana, sans-serif;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-
-    &:nth-child(even) {
-      text-align: right;
-    }
-  }
-
-  .grid-cell {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 2rem;
-    padding: 0.5rem;
-    text-align: right;
-  }
-
-  a.grid-cell {
     color: black;
-    font-family: Verdana, sans-serif;
-    font-size: 1rem;
-    justify-content: flex-start;
-
+  
     &:hover {
       background-color: yellow;
       text-decoration: none;
     }
   }
-}
 
-p {
-  margin: 0.5rem 0;
+  .page {
+    font-family: Garamond, Georgia, Times New Roman, serif;
+  }
+
+  .header {
+    background-color: white;
+    border: 0.5rem solid black;
+  }
+
+  .site-title, .page-link {
+    color: black;
+    font-family: Verdana, sans-serif;
+    padding: 1rem 0.5rem;
+
+    &:hover {
+      background-color: yellow;
+    }
+  }
+
+  h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 1rem 0;
+    text-transform: uppercase;
+  }
+
+  .link-grid {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+
+    .grid-title {
+      background-color: lightgray;
+      font-family: Verdana, sans-serif;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+
+      &:nth-child(even) {
+        text-align: right;
+      }
+    }
+
+    .grid-cell {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 2rem;
+      padding: 0.5rem;
+      text-align: right;
+    }
+
+    a.grid-cell {
+      color: black;
+      font-family: Verdana, sans-serif;
+      font-size: 1rem;
+      justify-content: flex-start;
+
+      &:hover {
+        background-color: yellow;
+        text-decoration: none;
+      }
+    }
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
 }

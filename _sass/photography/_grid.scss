@@ -1,4 +1,93 @@
 [data-layout=grid] {
+  font-family: Verdana, sans-serif;
+
+  .back {
+    background-color: white;
+    border: 1px solid black;
+    padding: unset;
+
+    a {
+      display: block;
+      color: black;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        text-decoration: none;
+        background-color: yellow;
+      }
+    }
+  }
+
+  .grid-info {
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    font-size: 1rem;
+    font-family: Verdana, sans-serif;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+
+  dialog {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+
+    &::backdrop {
+      backdrop-filter: blur(3px);
+    }
+
+    h1 {
+      margin: 0 auto 1rem;
+    }
+
+    & .table {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      & .row {
+        display: flex;
+        justify-content: space-between;
+
+        & > div {
+          display: flex;
+          align-items: center;
+  
+          &:nth-of-type(2n - 1) {
+            font-weight: bold;
+            margin-right: 2rem;
+          }
+          &:nth-of-type(2n) {
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    & button {
+      background-color: white;
+      border: 1px solid black;
+      padding: 0.5rem;
+      margin-top: 1rem;
+      flex-grow: 0;
+      text-decoration: underline;
+      width: auto;
+
+      &:hover {
+        cursor: pointer;
+        background-color: yellow;
+        text-decoration: none;
+      }
+    }
+  }
+
   .photo-grid-wrapper {
     display: flex;
     align-items: center;
