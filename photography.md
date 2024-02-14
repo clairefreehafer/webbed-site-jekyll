@@ -10,3 +10,5 @@ layout: default
     - [{{ page.title | escape }}]({{ page.url | relative_url }})
   {% endunless %}
 {% endfor %}
+
+for a more extensive (and possibly overwhelming) collection of my photography, check out my [smugmug](https://clairefreehafer.smugmug.com)!
