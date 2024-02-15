@@ -121,6 +121,12 @@ if album_key then
       else
         # X__X animal crossing photos don"t have DateTimeOriginal for some reason...
         filename = image["FileName"]
+
+        # smugmug ios app renames files on upload X_X
+        if filename.length > 23 then
+          filename = filename.scan(/\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}/)[0]
+        end
+
         filename[10] = "T"
         filename[13] = ":"
         filename[16] = ":"

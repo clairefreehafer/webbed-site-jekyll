@@ -2,6 +2,7 @@
 - src: https://photos.smugmug.com/photos/i-KwVj5j3/2/X2/i-KwVj5j3-X2.jpg
   alt: the insect exhibit at the avalar museum. a bag worm hangs from a tree and while
     a wasp rests on their hive.
+  path: ''
   title: bag worm & wasp
   caption: at the Avalar Museum
   tags:
@@ -11,6 +12,7 @@
     show_date: true
 - src: https://photos.smugmug.com/photos/i-CmsD7jg/3/L/i-CmsD7jg-L.jpg
   alt: ''
+  path: ''
   title: oar fish
   caption: ''
   tags:
@@ -18,8 +20,16 @@
   date: 2020-03-26 21:44:26
   extras:
     show_date: true
+- src: https://photos.smugmug.com/photos/i-6JThvQb/0/X2/i-6JThvQb-X2.gif
+  alt: ''
+  path: ''
+  title: ''
+  caption: ''
+  tags: []
+  date: 2020-04-05 17:39:35
 - src: https://photos.smugmug.com/photos/i-TH2mFQx/2/X2/i-TH2mFQx-X2.jpg
   alt: ''
+  path: ''
   title: ''
   caption: ''
   tags:
