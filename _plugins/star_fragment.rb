@@ -18,14 +18,14 @@ module Jekyll
       day = date.day
 
       astrologyDateRanges = {
-        :capricorn => '1222-0119',
-        :aquarius => '0120-0218',
-        :pisces => '0219-0320',
-        :aries => '0321-0419',
-        :taurus => '0420-0520',
-        :gemini => '0521-0621',
-        :cancer => '0622-0722',
-        :leo => '0723-0822'
+        :capricorn => "1222-0119",
+        :aquarius => "0120-0218",
+        :pisces => "0219-0320",
+        :aries => "0321-0419",
+        :taurus => "0420-0520",
+        :gemini => "0521-0621",
+        :cancer => "0622-0722",
+        :leo => "0723-0822"
       }
 
       case month
@@ -109,4 +109,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('star_fragment', Jekyll::StarFragmentTag)
+Liquid::Template.register_tag("star_fragment", Jekyll::StarFragmentTag)
