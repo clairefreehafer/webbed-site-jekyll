@@ -1,4 +1,4 @@
-$border-width: 3%;
+$border-width: 2%;
 
 $photo-z-index: 0;
 
@@ -93,5 +93,9 @@ $border-z-index: $photo-z-index - 2;
     transform: translateX(-50%);
     white-space: nowrap;
     z-index: $ui-z-index;
+
+    & a {
+      text-decoration: none;
+    }
   }
 }

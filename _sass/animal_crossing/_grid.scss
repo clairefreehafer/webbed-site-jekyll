@@ -1,0 +1,16 @@
+@import "mixins";
+@import "../base/slideshow";
+
+[data-layout=grid] {
+  .grid-info {
+    @include text-background;
+  }
+
+  .photo {
+    margin: $border-width;
+    padding: 0 $border-width;
+    max-width: 100%;
+    max-height: 90vh;
+    z-index: $photo-z-index;
+  }
+}

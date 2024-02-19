@@ -1,0 +1,43 @@
+---
+- src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-kQFfDcd/2/FLnpRvNRVcgW9Jd56ckcszsxrqmTnvHkjRpMTJsz4/X2/2020-06-28-17-30-22-X2.jpg
+  alt: ''
+  path: ''
+  title: ''
+  caption: ''
+  tags:
+  - nintendo switch
+  - flurry
+  date: 2020-06-28 17:30:22
+- src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-VvxL939/2/DFnqH2PTCjnPMzFCqmjVDXw2XsWKpBpnhpNNCnjD/X2/2020-06-28-17-32-52-X2.jpg
+  alt: ''
+  path: ''
+  title: ''
+  caption: ''
+  tags:
+  - nintendo switch
+  - flurry
+  date: 2020-06-28 17:32:52
+  extras:
+    has_border: true
+- src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-cm79QFM/2/Mw9TmjFFvLR5BPqD5jKSw7WThtSnjPZV4VwgnScx/X2/2020-06-28-17-37-40-X2.jpg
+  alt: ''
+  path: ''
+  title: ''
+  caption: ''
+  tags:
+  - nintendo switch
+  date: 2020-06-28 17:37:40
+  extras:
+    has_border: true
+- src: https://photos.smugmug.com/Video-Games/Animal-Crossing-New-Horizons/i-BCkmK3F/0/Dm3ssK28hkLqXNgcZsXx5P797DjRwfBh4wgVvP6b2/X2/2020-06-28_17-30-41-X2.gif
+  alt: ''
+  path: ''
+  title: my birthday
+  caption: ''
+  tags:
+  - gif
+  - nintendo switch
+  - flurry
+  date: 2020-06-28 17:30:41
+  extras:
+    show_date: true
