@@ -2,6 +2,10 @@
 @import "../base/slideshow";
 
 [data-layout=grid] {
+  .back {
+    @include text-background;
+  }
+
   .grid-info {
     @include text-background;
   }
