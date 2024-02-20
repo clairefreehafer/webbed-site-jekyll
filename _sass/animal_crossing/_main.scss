@@ -1,6 +1,7 @@
 @import "variables";
 @import "../base/variables";
 @import "mixins";
+@import "../base/slideshow";
 
 body {
   background-attachment: scroll;
@@ -110,7 +111,7 @@ body {
   padding: 8.5rem 3rem 1rem;
 }
 
-h2 {
+h2, h3 {
   font-weight: 200;
 }
 

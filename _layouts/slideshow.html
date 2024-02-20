@@ -14,7 +14,9 @@ script: slideshow
 {%- capture total_slides -%}
   {%- if page.path contains "photography" -%}
     {{ site.data[section][page.slug].size }}
-  {%- else" -%}
+  {%- elsif page.category -%}
+    {{ site.data[section][page.game][page.category][page.slug].size }}
+  {%- else -%}
     {{ site.data[section][page.game][page.slug].size }}
   {%- endif -%}
 {%- endcapture -%}
