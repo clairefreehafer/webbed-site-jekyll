@@ -10,7 +10,7 @@ module Jekyll
       url = context["site"]["url"]
 
       for page in pages do
-        slug = page.slug
+        slug = page.data["slug"]
         icon_asset = context["site"]["static_files"].find { |file| file.basename == slug }
         
         if page["icon"] then
@@ -18,10 +18,10 @@ module Jekyll
         elsif icon_asset then
           icon = url + icon_asset.url
         else
-          icon = url + ICON_PATH_PREFIX + "star_fragment_" + Jekyll.get_star_fragment(page["date"]) + ".png"
+          icon = url + ICON_PATH_PREFIX + "star_fragment_" + AnimalCrossing.get_star_fragment(page["date"]) + ".png"
         end
 
-        output += "<li><img src='#{icon}' class='page-icon' alt=''> <a href='#{url}#{page.url}'>#{page.title}</a>"
+        output += "<li><img src='#{icon}' class='page-icon' alt=''> <a href='#{url}#{page.url}'>#{page.data["title"]}</a>"
       end
 
       output += "</ol>"
@@ -34,6 +34,7 @@ module Jekyll
       url = context["site"]["url"]
       output = ""
 
+      # TODO: expand to other sections
       if section == "animal_crossing" then
         pages_by_game = pages.group_by { |page| page["game"] }
 
@@ -49,11 +50,14 @@ module Jekyll
           output = render_animal_crossing_links(context, sorted_pages_with_no_category, output)
 
           # next: the rest of the pages with categories
+          # TODO: how do we want to sort categories?
           for category in pages_by_category.keys do
             if category then
               output += "<h3>#{category}</h3><ol>"
 
-              output = render_animal_crossing_links(context, pages_by_category[category], output)
+              sorted_category_pages = pages_by_category[category].sort_by { |page| page["date"] }
+
+              output = render_animal_crossing_links(context, sorted_category_pages, output)
               output += "</ol>"
             end
           end

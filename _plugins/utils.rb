@@ -1,4 +1,4 @@
-module Jekyll
+module AnimalCrossing
   def self.get_star_fragment(date)
     month = date.month
     day = date.day
