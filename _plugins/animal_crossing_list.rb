@@ -14,7 +14,11 @@ module Jekyll
         :taurus => "0420-0520",
         :gemini => "0521-0621",
         :cancer => "0622-0722",
-        :leo => "0723-0822"
+        :leo => "0723-0822",
+        :virgo => "0823-0922",
+        :libra => "0923-1023",
+        :scorpio => "1024-1122",
+        :sagittarius => "1123-1221"
       }
 
       case month
@@ -63,35 +67,33 @@ module Jekyll
       when 8
         if day <= 22 then
           astrologyDateRanges[:leo]
+        else
+          astrologyDateRanges[:virgo]
         end
-      # when 9
-      #   if day <= 15
-      #     "#{@shape}_0723-0915.png"
-      #   else
-      #     "#{@shape}_0916-0930.png"
-      #   end
-      # when 10
-      #   if day <= 15
-      #     "#{@shape}_1001-1015.png"
-      #   elsif day <= 29
-      #     "#{@shape}_1016-1029.png"
-      #   else
-      #     "#{@shape}_1030-1112.png"
-      #   end
-      # when 11
-      #   if day <= 12
-      #     "#{@shape}_1030-1112.png"
-      #   elsif day <= 28
-      #     "#{@shape}_1113-1128.png"
-      #   else
-      #     "#{@shape}_1129-1209.png"
-      #   end
-      # when 12
-      #   if day <= 9
-      #     "#{@shape}_1129-1209.png"
-      #   else
-      #     "#{@shape}_1210-0224.png"
-      #   end
+      when 9
+        if day <= 22
+          astrologyDateRanges[:virgo]
+        else
+          astrologyDateRanges[:libra]
+        end
+      when 10
+        if day <= 23
+          astrologyDateRanges[:libra]
+        else
+          astrologyDateRanges[:scorpio]
+        end
+      when 11
+        if day <= 22
+          astrologyDateRanges[:scorpio]
+        else
+          astrologyDateRanges[:sagittarius]
+        end
+      when 12
+        if day <= 21
+          astrologyDateRanges[:sagittarius]
+        else
+          astrologyDateRanges[:capricorn]
+        end
       end
     end
 
@@ -101,7 +103,6 @@ module Jekyll
       output = "<ol>"
 
       pages = context[pages_variable.strip]
-
       sorted_pages = pages.sort_by { |page| page["date"] }
 
       for page in sorted_pages do
@@ -111,17 +112,12 @@ module Jekyll
         if page["icon"] then
           icon = url + ICON_PATH_PREFIX + page["icon"] + ".png"
         elsif icon_asset then
-          puts icon_asset
           icon = url + icon_asset.url
         else
-          icon = url + ICON_PATH_PREFIX + "star_fragment_" + get_star_fragment(page.date) + ".png"
+          icon = url + ICON_PATH_PREFIX + "star_fragment_" + get_star_fragment(page["date"]) + ".png"
         end
 
-        output += "<li>"
-
-        output += "<img src='#{icon}' class='page-icon' alt=''> <a href='#{url}#{page.url}'>#{page.title}</a>"
-
-        output += "</li>"
+        output += "<li><img src='#{icon}' class='page-icon' alt=''> <a href='#{url}#{page.url}'>#{page.title}</a>"
       end
 
       output += "</ol>"
