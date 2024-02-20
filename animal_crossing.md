@@ -5,31 +5,38 @@ theme: animal_crossing
 ---
 
 <!-- TODO: make different list pages for each game -->
+<!-- TODO: make .html -->
+
+{%- assign ICON_PATH_PREFIX = "/assets/images/page_icons/animal_crossing/" -%}
 
 {%- assign pages_by_game = site.animal_crossing | group_by: "game" | sort: "name" -%}
 {%- assign games = "new_horizons" -%}
 
-{% for game in games -%}
-## {{ game | replace: "_", " " }}
+{%- for game in games -%}
 
-  {%- assign current_game_pages = pages_by_game | where: "name", game | sort: "name" -%}
-  {%- assign pages_by_category = current_game_pages[0].items | group_by: "category" -%}
+## {{ game | replace: "_", " " }}
+<!-- -->
+  {%- assign game_pages = pages_by_game | where: "name", game | sort: "name" -%}
+  {%- assign pages_by_category = game_pages[0].items | group_by: "category" -%}
+  {%- assign pages_with_no_category = pages_by_category | find: "name", "" -%}
+  {%- assign sorted_pages_with_no_category = pages_with_no_category.items | sort: "date" -%}
+
+  {% animal_crossing_list %}
+    sorted_pages_with_no_category
+  {% endanimal_crossing_list %}
 
   {%- for category in pages_by_category -%}
     {%- if category.name.size > 0 %}
     
 ### {{ category.name }}
+<!-- -->
+      {%- assign sorted_pages = category.items | sort: "date" -%}
+
+      {% animal_crossing_list %}
+        sorted_pages
+      {% endanimal_crossing_list %}
+
     {%- endif -%}
 
-    {%- for page in category.items %}
-      {%- capture icon -%}
-        {%- if page.icon -%}
-          {{ page.icon }}
-        {%- else -%}
-          star_fragment_{%- star_fragment page.date -%}
-        {%- endif -%}
-      {%- endcapture %}
-- <img src="/assets/images/page_icons/animal_crossing/{{ icon }}.png" class="page-icon" alt=""> [{{ page.title | escape }}]({{- page.url | relative_url }})
-    {%- endfor -%}
   {% endfor %}
 {%- endfor %} 

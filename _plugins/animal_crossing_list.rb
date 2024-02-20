@@ -1,19 +1,8 @@
 module Jekyll
-  class StarFragmentTag < Liquid::Tag
-
-    def initialize(tag_name, page_date, tokens)
-      super
-
-      @page_date = page_date
-    end
-
-    def render(context)
-      if @page_date == nil
-        date = Time.now
-      else
-        date = context[@page_date.strip]
-      end
-
+  class AnimalCrossingListBlock < Liquid::Block
+    ICON_PATH_PREFIX = "/assets/images/page_icons/animal_crossing/"
+    
+    def get_star_fragment(date)
       month = date.month
       day = date.day
 
@@ -104,9 +93,42 @@ module Jekyll
       #     "#{@shape}_1210-0224.png"
       #   end
       end
+    end
 
+    def render(context)
+      pages_variable = super
+      url = context["site"]["url"]
+      output = "<ol>"
+
+      pages = context[pages_variable.strip]
+
+      sorted_pages = pages.sort_by { |page| page["date"] }
+
+      for page in sorted_pages do
+        slug = page.slug
+        icon_asset = context["site"]["static_files"].find { |file| file.basename == slug }
+        
+        if page["icon"] then
+          icon = url + ICON_PATH_PREFIX + page["icon"] + ".png"
+        elsif icon_asset then
+          puts icon_asset
+          icon = url + icon_asset.url
+        else
+          icon = url + ICON_PATH_PREFIX + "star_fragment_" + get_star_fragment(page.date) + ".png"
+        end
+
+        output += "<li>"
+
+        output += "<img src='#{icon}' class='page-icon' alt=''> <a href='#{url}#{page.url}'>#{page.title}</a>"
+
+        output += "</li>"
+      end
+
+      output += "</ol>"
+
+      output
     end
   end
 end
 
-Liquid::Template.register_tag("star_fragment", Jekyll::StarFragmentTag)
+Liquid::Template.register_tag("animal_crossing_list", Jekyll::AnimalCrossingListBlock)

@@ -110,16 +110,12 @@ if album_key then
       "tags" => image[Smugmug::TAGS]
     }
 
-    # don"t care about date for zelda photos
+    # don't care about date for zelda photos
     unless section == "zelda"
       if image["DateTimeOriginal"] then
         data_to_save["date"] = DateTime.parse(image["DateTimeOriginal"]).strftime("%F %T")
-      elsif section != "animal_crossing" then
-        # gifs made with ffmpeg don't have DateTimeOriginal
-        # TODO: decide if we want to manually add it or not
-        puts "❗️ #{image["FileName"]} is missing DateTimeOriginal"
-      else
-        # X__X animal crossing photos don"t have DateTimeOriginal for some reason...
+      elsif section == "animal_crossing" then
+        # animal crossing photos don"t have DateTimeOriginal for some reason
         filename = image["FileName"]
 
         # smugmug ios app renames files on upload X_X
@@ -131,6 +127,10 @@ if album_key then
         filename[13] = ":"
         filename[16] = ":"
         data_to_save["date"] = DateTime.parse(filename).strftime("%F %T")
+      else
+        # gifs made with ffmpeg don't have DateTimeOriginal
+        # TODO: decide if we want to manually add it or not
+        puts "❗️ #{image["FileName"]} is missing DateTimeOriginal"
       end
     end
 

@@ -5,4 +5,5 @@ game: new_horizons
 icon: rover
 layout: grid
 date: 2020-05-02
+category: visitors
 ---
