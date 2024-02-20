@@ -5,17 +5,15 @@ theme: animal_crossing
 ---
 
 <!-- TODO: make different list pages for each game -->
-<!-- TODO: make .html -->
-
-{%- assign ICON_PATH_PREFIX = "/assets/images/page_icons/animal_crossing/" -%}
+<!-- TODO: try moving more logic into plugin -->
 
 {%- assign pages_by_game = site.animal_crossing | group_by: "game" | sort: "name" -%}
 {%- assign games = "new_horizons" -%}
 
 {%- for game in games -%}
 
-## {{ game | replace: "_", " " }}
-<!-- -->
+<h2>{{ game | replace: "_", " " }}</h2>
+
   {%- assign game_pages = pages_by_game | where: "name", game | sort: "name" -%}
   {%- assign pages_by_category = game_pages[0].items | group_by: "category" -%}
   {%- assign pages_with_no_category = pages_by_category | find: "name", "" -%}
@@ -27,10 +25,10 @@ theme: animal_crossing
 
   {%- for category in pages_by_category -%}
     {%- if category.name.size > 0 %}
-    
-### {{ category.name }}
-<!-- -->
-      {%- assign sorted_pages = category.items | sort: "date" -%}
+
+    <h3>{{ category.name }}</h3>
+
+    {%- assign sorted_pages = category.items | sort: "date" -%}
 
       {% animal_crossing_list %}
         sorted_pages
