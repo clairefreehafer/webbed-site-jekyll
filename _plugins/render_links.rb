@@ -17,6 +17,8 @@ module Jekyll
           icon = url + ICON_PATH_PREFIX + page["icon"] + ".png"
         elsif icon_asset then
           icon = url + icon_asset.url
+        elsif page["category"] == "dreams"
+          icon = url + ICON_PATH_PREFIX + "luna.png"
         else
           icon = url + ICON_PATH_PREFIX + "star_fragment_" + AnimalCrossing.get_star_fragment(page["date"]) + ".png"
         end
