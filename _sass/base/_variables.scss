@@ -1,1 +1,12 @@
 $menu_breakpoint: 750px;
+
+// photo borders
+$border-width: 2%;
+
+$photo-z-index: 0;
+
+$ui-z-index: $photo-z-index + 2;
+$inset-shadow-zindex: $photo-z-index + 1;
+// $photo-z-index: 0;
+$texture-z-index: $photo-z-index - 1;
+$border-z-index: $photo-z-index - 2;
