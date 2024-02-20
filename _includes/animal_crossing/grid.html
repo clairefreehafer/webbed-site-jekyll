@@ -1,4 +1,13 @@
-{%- assign images = site.data.animal_crossing[page.game][page.slug] -%}
+{%- if page.category -%}
+  {%- assign images = site.data.animal_crossing[page.game][page.category][page.slug] -%}
+{%- else -%}
+  {%- assign images = site.data.animal_crossing[page.game][page.slug] -%}
+{%- endif -%}
+<!--
+  TODO: for making this work with more than one nested folder...
+  {%- assign path = page.id | split: "/" -%} 
+  or maybe just attempt to make a plugin again...
+-->
 
 {%- for image in images -%}
   {%- capture hide_border -%}
