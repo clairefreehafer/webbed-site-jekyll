@@ -11,7 +11,7 @@ module Jekyll
       for page in pages do
         slug = page.data["slug"]
         icon_asset = context["site"]["static_files"].find { |file| file.basename == slug }
-        
+
         if page["icon"] then
           icon = ICON_PATH_PREFIX + page["icon"] + ".png"
         elsif icon_asset then
@@ -22,7 +22,7 @@ module Jekyll
           icon = ICON_PATH_PREFIX + "star_fragment_" + AnimalCrossing.get_star_fragment(page["date"]) + ".png"
         end
 
-        output += "<li><img src='#{icon}' class='page-icon' alt=''> <a href='#{url}#{page.url}'>#{page.data["title"]}</a>"
+        output += "<li><img src='#{icon}' class='page-icon' alt=''> <a href='#{page.url}'>#{page.data["title"]}</a>"
       end
 
       output += "</ol>"
