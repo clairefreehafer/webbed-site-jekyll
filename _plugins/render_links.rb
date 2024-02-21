@@ -6,7 +6,7 @@ module Jekyll
     ICON_PATH_PREFIX = "/assets/images/page_icons/animal_crossing/"
 
     def render_animal_crossing_links(context, pages, current_output)
-      output = current_output
+      output = current_output + "<ul>"
 
       for page in pages do
         slug = page.data["slug"]
@@ -25,7 +25,7 @@ module Jekyll
         output += "<li><img src='#{icon}' class='page-icon' alt=''> <a href='#{page.url}'>#{page.data["title"]}</a>"
       end
 
-      output += "</ol>"
+      output += "</ul>"
       output
     end
 
@@ -45,7 +45,6 @@ module Jekyll
 
           # first: pages with no category
           sorted_pages_with_no_category = pages_by_category[nil].sort_by { |page| page["date"] }
-          output += "<ol>"
 
           output = render_animal_crossing_links(context, sorted_pages_with_no_category, output)
 
@@ -53,7 +52,7 @@ module Jekyll
           # TODO: how do we want to sort categories?
           for category in pages_by_category.keys do
             if category then
-              output += "<h3>#{category}</h3><ol>"
+              output += "<h3>#{category}</h3>"
 
               sorted_category_pages = pages_by_category[category].sort_by { |page| page["date"] }
 
