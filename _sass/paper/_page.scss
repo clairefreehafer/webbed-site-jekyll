@@ -1,3 +1,5 @@
+@import "variables";
+
 [data-theme=default] {
   a {
     font-family: Verdana, sans-serif;
@@ -75,7 +77,32 @@
     }
   }
 
+  .main {
+    background:
+      linear-gradient(
+        to right,
+        transparent $red-line-padding,
+        $paper-red-line $red-line-padding calc($red-line-padding + 1px),
+        transparent $red-line-padding
+      ),
+      linear-gradient(
+        to bottom,
+        white 0 2rem,
+        transparent 2rem
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        white 0 $paper-line-height,
+        $paper-blue-line $paper-line-height calc($paper-line-height + 1px),
+        white calc($paper-line-height + 1px)
+      );
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    padding: $paper-top-padding 1rem $paper-line-height calc($red-line-padding + 0.5rem);
+  }
+
   p {
-    margin: 0.5rem 0;
+    line-height: 1.5rem;
   }
 }

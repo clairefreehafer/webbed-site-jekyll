@@ -1,4 +1,4 @@
-require_relative "utils"
+require_relative "utils/animal_crossing"
 
 module Jekyll
   class RenderLinksTag < Liquid::Tag

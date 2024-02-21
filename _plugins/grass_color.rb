@@ -1,6 +1,7 @@
+require_relative "utils/animal_crossing"
+
 module Jekyll
   class GrassColorTag < Liquid::Tag
-
     def initialize(tag_name, variables, tokens)
       super
     end
@@ -20,19 +21,6 @@ module Jekyll
         puts "❗️ please assign shape in #{context['page']['title']}"
         'NO_SHAPE_PROVIDED'
       end
-
-      colors = {
-        :"1210-0224" => "rgb(189, 215, 238)",
-        :"0225-0331" => "rgb(31, 140, 57)",
-        :"0401-0722" => "rgb(0, 131, 90)",
-        :"0723-0915" => "rgb(19, 115, 82)",
-        :"0916-0930" => "rgb(73, 123, 49)",
-        :"1001-1015" => "rgb(132, 123, 58)",
-        :"1016-1029" => "rgb(148, 99, 99)",
-        :"1030-1112" => "rgb(148, 90, 98)",
-        :"1113-1128" => "rgb(132, 90, 82)",
-        :"1129-1209" => "rgb(99, 81, 82)",
-      }
 
       case month
       when 1
@@ -87,7 +75,7 @@ module Jekyll
 
       return "body {"\
       "  background-image: url('/assets/images/grass/#{shape}_#{range}.png');"\
-      "  background-color: #{colors[:"#{range}"]};"\
+      "  background-color: #{AnimalCrossing.class_variable_get(:@@GRASS_COLORS)[:"#{range}"]};"\
       "} "\
       ".page-content {"\
       "  background-image: url('/assets/images/sand/#{shape}_#{range}.png');"
